@@ -1,19 +1,21 @@
 const searchForm = document.querySelector('.search-form');
-const cartForm = document.querySelector('#cart-form');
+const cartForm = document.querySelector('.cart-form');
+
 
 //serach-btn
 const searchBtn = document.querySelector('#search-btn');
 
 searchBtn.onclick = () => {
     searchForm.classList.toggle('show');
-    // cartForm.classList.remove('show')
+    cartForm.classList.remove('show')
 }
 
 // cart-btn
 const cartBtn = document.querySelector('#cart-btn');
 
 cartBtn.onclick = () => {
-    cartForm.classList.toggle('active')
+    searchForm.classList.remove('show')
+    cartForm.classList.toggle('show')
 }
 
 // window
