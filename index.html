@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/modal.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
 </head>
 <body>
     <!-- header-starts -->
@@ -16,8 +19,7 @@
                 <img src="./images/logo1.png" alt="">
             </a>
         </div>
-        <div id="menu-btn" class="fas fa-bars"></div>
-        </span>
+       
         
         <nav class="navbar">
             <ul class="menu">
@@ -27,24 +29,76 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <div class="icon">
-                <div class="fas fa-search" id="search-btn"></div>
-                <div class="fa-solid fa-cart-shopping" id="cart-btn"></div>
-                <div class="fa-solid fa-user" id="user"></div>
-            </div>
-            <!-- user-modal -->
-            <div class="user-sub">
-                <ul class="user-list">
-                    <li><a href="#"><i class="fa-solid fa-user"></i> My Profile</a></li>
-                    <li><a href="#"><i class="fa-solid fa-comment"></i> Message</a></li>
-                    <li><a href="#"><i class="fa-solid fa-bell"></i> Notification</a></li>
-                    <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
-                    <li><a href="#"><i class="fa-solid fa-question"></i> Help and Support</a></li>
-                    <li><a href="validationForm.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> Log in</a></li>
-                </ul>
+            <div class="login" id="login-btn">
+                <a href="#">Login</a>
             </div>
         </nav>
+       
+        <div class="icon">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fa-solid fa-cart-shopping" id="cart-btn"></div>
+            <div class="fas fa-bars"  id="menu-btn"></div>
+        </div>
+
+      
+         <!-- modal search form -->
+         <div class="search-form">
+            <input type="text" id="search" value="" placeholder="search ...">
+            <label for="search-box"><i class="fa-solid fa-magnifying-glass"></i></label>
+        </div>
+
+       <!-- modal cart  -->
+        <div class="cart-form">
+            <div class="cart-container cart-container-js">
+                <div class="cart-close cart-close-js">X</div>
+                <div class="cart-content">
+                    <h2>My Cart</h2>
+                    <div class="cart-list">
+
+                        <div class="cart-item">
+                            <img src="./images/blog-10.webp" alt="">
+                            <div class="cart-item-name">
+                                <h3>Jeans Men Fashion</h3>
+                                <div class="cart-item-prices">
+                                    $ 55,7
+                                </div>
+                            </div>
+                            <span>X</span>
+                        </div>
+
+                        <div class="cart-item">
+                            <img src="./images/blog-8.jpg" alt="">
+                            <div class="cart-item-name">
+                                <h3>Jeans Men Fashion</h3>
+                                <div class="cart-item-prices">
+                                    $  70,5
+                                </div>
+                            </div>
+                            <span>X</span>
+                        </div>
+
+                        <div class="cart-item">
+                            <img src="./images/blog-6.jpg" alt="">
+                            <div class="cart-item-name">
+                                <h3>Jeans Men Fashion</h3>
+                                <div class="cart-item-prices">
+                                    $  70,5
+                                </div>
+                            </div>
+                            <span>X</span>
+                        </div>
+                    </div>
+                    <div class="check-out">
+                        <a href="#">Check Out</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+
         
+       
+         
     </header>
     <!-- header-ends -->
 
@@ -99,12 +153,27 @@
             <div class="banner-shop-item">
                 <img src="./images/banner-watch.avif" alt="">
             </div>
-            <div class="banner-shop-item">~
+            <div class="banner-shop-item">
                 <img src="./images/banner-jeans.avif" alt="">
             </div>
         </div>
      </section>
     <!-- section banner-shop ends -->
+
+    <!-- modal user profile starts-->
+     <!-- user-modal -->
+     
+    <div class="back-to-top">
+        <div class="btn-container">
+            <i class="fas fa-caret-square-up"></i>
+        </div>
+    </div>
+     
+     
+    <!-- modal user profile ends -->
+
     <script src="./js/bar.js"></script>
+    <script src="./js/modalSearch.js"></script>
+    <script src="./js/modalCart.js"></script>
 </body>
 </html>
