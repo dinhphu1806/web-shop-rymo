@@ -128,22 +128,29 @@
 } */
 
 /*CSS back to Top*/
-.back-to-top {
-    position: fixed;
-    right: 20px; bottom: 30px;
+.back-to-top{
+    position: relative;
     overflow: hidden;
 }
-.btn-container{
-    width: 50px;
-    height: 50px;
-}
-.btn-container i{
+.btn-top{
+    position: fixed;
+    right: 0; bottom: 80px;
     font-weight: bold;
-    color: #fff;
     line-height: 50px;
-    color: #ccc;
-    font-size: 32px;
+    color: rgb(204, 204, 204);
+    font-size: 36px;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.3s linear;
 }
+.btn-top.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+  
+
 
 @media (max-width: 578px) {
     .search-form{
