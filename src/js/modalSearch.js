@@ -17,12 +17,23 @@ cartBtn.onclick = () => {
     searchForm.classList.remove('show')
     cartForm.classList.toggle('show')
 }
+// bars
+const navBar = document.querySelector('.navbar');
+const menuBtn = document.querySelector('#menu-btn');
 
-// window
-// window.onscroll = () => {
-//     searchForm.classList.remove('show');
-//     cartForm.classList.remove('show');
-// }
+menuBtn.onclick = () => {
+    menuBtn.classList.toggle('fa-times');
+    navBar.classList.toggle('active');
+    searchForm.classList.remove('show');
+    cartForm.classList.remove('show')
+ }
+// khi lăn chuột thì sẽ mất
+
+window.onscroll = () => {
+    searchForm.classList.remove('show');
+    cartForm.classList.remove('show');
+    navBar.classList.remove('active')
+}
 
 // cart-btn
 // const cart = document.querySelector('.cart');
