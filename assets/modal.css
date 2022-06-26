@@ -32,14 +32,16 @@
     background: #fff;
     min-height: 300px;
     width: 350px;
-    transform: scale(0);
-    transform-origin: top;
-    z-index: 9999;
+    /* transform: scale(0); */
+    /* transform-origin: right; */
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    z-index: 999;
     cursor: pointer;
     transition: all 0.2s linear;
 }
 .cart-form.show{
-    transform: scale(1);
+    /* transform: scale(1); */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 .cart-container{
     position: relative;
