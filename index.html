@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="./assets/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
     <!-- header-starts -->
     <header class="header">
         <div class="logo">
             <a href="index.html">
-                <img src="./images/logo1.png" alt="">
+                <img src="./images/logo-rymo/logo1.png" alt="">
             </a>
         </div>
        
@@ -23,7 +23,7 @@
             <ul class="menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Shop</a></li>
-                <li><a href="#">Product</a></li>
+                <li><a href="detailWatch1.html">Product</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
@@ -54,7 +54,7 @@
                     <div class="cart-list">
 
                         <div class="cart-item">
-                            <img src="./images/blog-10.webp" alt="">
+                            <img src="./images/balo/detail-1/poly chuck plus 1.0.jpg" alt="">
                             <div class="cart-item-name">
                                 <h3>Jeans Men Fashion</h3>
                                 <div class="cart-item-prices">
@@ -65,7 +65,7 @@
                         </div>
 
                         <div class="cart-item">
-                            <img src="./images/blog-8.jpg" alt="">
+                            <img src="./images/watch/detail-1/product-1.jpg" alt="">
                             <div class="cart-item-name">
                                 <h3>Jeans Men Fashion</h3>
                                 <div class="cart-item-prices">
@@ -76,7 +76,7 @@
                         </div>
 
                         <div class="cart-item">
-                            <img src="./images/blog-6.jpg" alt="">
+                            <img src="./images/shoes/detail-1/black-shoes.jpg" alt="">
                             <div class="cart-item-name">
                                 <h3>Jeans Men Fashion</h3>
                                 <div class="cart-item-prices">
@@ -85,6 +85,10 @@
                             </div>
                             <span>X</span>
                         </div>
+                    </div>
+                    <div class="total">
+                        <span>Total: </span>
+                        <p style="font-weight: bold; margin-left: 10px;">$ 196,7</p>
                     </div>
                     <div class="check-out">
                         <a href="#">Checkout</a>
@@ -98,11 +102,10 @@
     <!-- header-ends -->
 
 
-
     <!-- secsion banner starts -->
     <section class="banner">
         <div class="banner-container">
-            <img src="./images/banner-11.jpg" alt="">
+            <img src="./images/banner/banner-container.jpg" alt="">
             <div class="banner-content">
                 <h3>New Arraivals</h3>
                 <h1><span>Best Price</span> This Year</h1>
@@ -122,22 +125,22 @@
         <div class="logo-brand-list">
             <div class="logo-brand-item">
                 <div class="brand-1">
-                    <img src="./images/comedy.png" alt="">
+                    <img src="./images/logo-main-brand/comedy.png" alt="">
                 </div>
                 <div class="brand-2">
-                    <img src="./images/cinderella.png" alt="">
+                    <img src="./images/logo-main-brand/cinderella.png" alt="">
                 </div>
                 <div class="brand-3">
-                    <img src="./images/right-check.png" alt="">
+                    <img src="./images/logo-main-brand/right-check.png" alt="">
                 </div>
                 <div class="brand-4">
-                    <img src="./images/skill-star.png" alt="">
+                    <img src="./images/logo-main-brand/skill-star.png" alt="">
                 </div>
                 <div class="brand-5">
-                    <img src="./images/SLS.png" alt="">
+                    <img src="./images/logo-main-brand/SLS.png" alt="">
                 </div>
                 <div class="brand-6">
-                    <img src="./images/right-check-2.png" alt="">
+                    <img src="./images/logo-main-brand/right-check-2.png" alt="">
                 </div>
             </div>
         </div>
@@ -148,10 +151,10 @@
      <section class="banner-shop">
         <div class="banner-shop-container">
             <div class="banner-shop-item">
-                <img src="./images/banner-watch.avif" alt="">
+                <img src="./images/banner/banner-watch.avif" alt="">
             </div>
             <div class="banner-shop-item">
-                <img src="./images/banner-jeans.avif" alt="">
+                <img src="./images/banner/banner-jeans.avif" alt="">
             </div>
         </div>
      </section>
@@ -161,7 +164,7 @@
      <section class="filter-watch">
         <div class="filter-container">
             <div class="filter-title">
-                <h1>Our Watchs</h1>
+                <h1 class="underline underline-green green">Our Watchs</h1>
             </div>
 
             <div class="filter-btns">
@@ -174,13 +177,13 @@
             <div class="filter-items">
                 <!-- item-1 -->
                 <div class="filter-item all popular">
-                       <a href="" class="detail-product">
+                       <a href="detailWatch1.html" class="detail-product">
                             <div class="filter-item-img">
                                 <img src="./images/watch/detail-1/product-1.jpg" alt="">   
                                 <div class="filter-icon-inside">
-                                    <a href="#"><i class="fa-solid fa-heart"></i></a>
-                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                    <a href="#"><i class="fas fa-info-circle"></i></a>
+                                    <a class="more" title="Add to favorites" href="#"><i class="fa-solid fa-heart"></i></a>
+                                    <a class="more" title="Add to cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a class="more" title="See details" href="#"><i class="fas fa-info-circle"></i></a>
                                 </div>     
                             </div>
 
@@ -214,12 +217,12 @@
                  <div class="filter-item all promotional">
                         <a href="">
                             <div class="filter-item-img">
-                                <img src="./images/watch/detail-1/product-1.jpg" alt="">
+                                <img src="./images/watch/detail-2/product-1.jpg" alt="">
                                 <span>-29%</span>
                                 <div class="filter-icon-inside">
-                                    <a href="#"><i class="fa-solid fa-heart"></i></a>
-                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                    <a href="#"><i class="fas fa-info-circle"></i></a>
+                                    <a href="#" title="Add to favourites"><i class="fa-solid fa-heart"></i></a>
+                                    <a href="#" title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href="#" title="See details"><i class="fas fa-info-circle"></i></a>
                                 </div> 
                             </div>
                             <div class="filter-item-info">
@@ -252,12 +255,12 @@
                  <div class="filter-item all new">
                     <a href="">
                         <div class="filter-item-img">
-                            <img src="./images/watch/detail-1/product-1.jpg" alt="">
-                            <span>new</span>
+                            <img src="./images/watch/detail-2/product-02.png" alt="">
+                            <span>-29%</span>
                             <div class="filter-icon-inside">
-                                <a href="#"><i class="fa-solid fa-heart"></i></a>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                <a href="#"><i class="fas fa-info-circle"></i></a>
+                                <a class="more" title="Add to favorites" href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a class="more" title="Add to cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a class="more" title="See details" href="#"><i class="fas fa-info-circle"></i></a>
                             </div> 
                         </div>
                         <div class="filter-item-info">
@@ -278,23 +281,23 @@
                                 <div class="sold-text">
                                     sold 5,2k
                                 </div>
-                            </div>        
+                            </div>
                         </div>
                     </a>
                     <div class="add-to-cart">
                         <a href="#">Add to cart</a>
                     </div>
-                </div>
-
+               </div>
+ 
                  <!-- item-4 -->
                  <div class="filter-item all popular">
                     <a href="">
                         <div class="filter-item-img">
-                            <img src="./images/watch/detail-1/product-1.jpg" alt="">
+                            <img src="./images/watch/detail-4/product-11.jpg" alt="">
                             <div class="filter-icon-inside">
-                                <a href="#"><i class="fa-solid fa-heart"></i></a>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                <a href="#"><i class="fas fa-info-circle"></i></a>
+                                <a class="more" title="Add to favorites" href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a class="more" title="Add to cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a class="more" title="See details" href="#"><i class="fas fa-info-circle"></i></a>
                             </div> 
                         </div>
                         <div class="filter-item-info">
@@ -327,12 +330,12 @@
                  <div class="filter-item all new">
                    <a href="">
                         <div class="filter-item-img">
-                            <img src="./images/watch/detail-1/product-1.jpg" alt="">
+                            <img src="./images/watch/detail-5/product-10.jpg" alt="">
                             <span>new</span>
                             <div class="filter-icon-inside">
-                                <a href="#"><i class="fa-solid fa-heart"></i></a>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                <a href="#"><i class="fas fa-info-circle"></i></a>
+                                <a class="more" title="Add to favorites" href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a class="more" title="Add to cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a class="more" title="See details" href="#"><i class="fas fa-info-circle"></i></a>
                             </div> 
                         </div>
                         <div class="filter-item-info">
@@ -365,12 +368,12 @@
                  <div class="filter-item all popular">
                    <a href="">
                         <div class="filter-item-img">
-                            <img src="./images/watch/detail-1/product-1.jpg" alt="">
+                            <img src="./images/watch/detail-6/product-09.jpg" alt="">
                             
                             <div class="filter-icon-inside">
-                                <a href="#"><i class="fa-solid fa-heart"></i></a>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                <a href="#"><i class="fas fa-info-circle"></i></a>
+                                <a class="more" title="Add to favorites" href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a class="more" title="Add to cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a class="more" title="See details" href="#"><i class="fas fa-info-circle"></i></a>
                             </div> 
                         </div>
                         <div class="filter-item-info">
@@ -403,12 +406,12 @@
                  <div class="filter-item all new">
                    <a href="">
                         <div class="filter-item-img">
-                            <img src="./images/watch/detail-1/product-1.jpg" alt="">
+                            <img src="./images/watch/detail-7/product-08.jpg" alt="">
                             <span>new</span>
                             <div class="filter-icon-inside">
-                                <a href="#"><i class="fa-solid fa-heart"></i></a>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                <a href="#"><i class="fas fa-info-circle"></i></a>
+                                <a class="more" title="Add to favorites" href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a class="more" title="Add to cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a class="more" title="See details" href="#"><i class="fas fa-info-circle"></i></a>
                             </div> 
                         </div>
                         <div class="filter-item-info">
@@ -441,12 +444,12 @@
                  <div class="filter-item all promotional">
                     <a href="">
                         <div class="filter-item-img">
-                            <img src="./images/watch/detail-1/product-1.jpg" alt="">
+                            <img src="./images/watch/detail-8/product-07.jpg" alt="">
                             <span>-30%</span>
                             <div class="filter-icon-inside">
-                                <a href="#"><i class="fa-solid fa-heart"></i></a>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                <a href="#"><i class="fas fa-info-circle"></i></a>
+                                <a class="more" title="Add to favorites" href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a class="more" title="Add to cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a class="more" title="See details" href="#"><i class="fas fa-info-circle"></i></a>
                             </div> 
                         </div>
                         <div class="filter-item-info">
@@ -479,12 +482,12 @@
                  <div class="filter-item all promotional">
                     <a href="">
                         <div class="filter-item-img">
-                            <img src="./images/watch/detail-1/product-1.jpg" alt="">
+                            <img src="./images/watch/detail-9/product-06.jpg" alt="">
                             <span>-29%</span>
                             <div class="filter-icon-inside">
-                                <a href="#"><i class="fa-solid fa-heart"></i></a>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                <a href="#"><i class="fas fa-info-circle"></i></a>
+                                <a class="more" title="Add to favorites" href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a class="more" title="Add to cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a class="more" title="See details" href="#"><i class="fas fa-info-circle"></i></a>
                             </div> 
                         </div>
                         <div class="filter-item-info">
@@ -517,11 +520,11 @@
                  <div class="filter-item all popular">
                     <a href="">
                         <div class="filter-item-img">
-                            <img src="./images/watch/detail-1/product-1.jpg" alt="">
+                            <img src="./images/watch/detail-8/product-07.jpg" alt="">
                             <div class="filter-icon-inside">
-                                <a href="#"><i class="fa-solid fa-heart"></i></a>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                <a href="#"><i class="fas fa-info-circle"></i></a>
+                                <a class="more" title="Add to favorites" href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a class="more" title="Add to cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a class="more" title="See details" href="#"><i class="fas fa-info-circle"></i></a>
                             </div> 
                         </div>
                         <div class="filter-item-info">
@@ -558,15 +561,14 @@
     <section class="slideShow">
         <div class="slideshow-container">
             <div class="mySlides fade">
-                <img src="./images/banner-1.jpg"  alt="">
+                <img src="./images/banner/banner-1.jpg"  alt="">
             </div>
-
             <div class="mySlides fade">   
-                <img src="./images/banner-2.jpg"  alt="">
+                <img src="./images/banner/banner-2.png"  alt="">
             </div>
             
             <div class="mySlides fade">   
-                <img src="./images/banner-3.jpg"  alt="">
+                <img src="./images/banner/banner-3.webp"  alt="">
             </div>
             <!-- button prev - next -->
             <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-angle-left"></i></a>
@@ -579,7 +581,7 @@
     <secsion class="product">
         <div class="product-container">
             <div class="product-title">
-                <h1>Fashion Style</h1>
+                <h1 class="underline underline-red red">Fashion Style</h1>
             </div>
             <div class="product-list">
           <!-- item-1 -->
@@ -762,43 +764,73 @@
                     </div>
                 </div>
 
-
-
-
-
             </div>
         </div>
 
     </secsion>
-    <!-- section banner product ends -->
+    <!--section banner product ends -->
+ 
+    <!-- secsion more starts -->
+    <section class="more">
+        <div class="more-container">
+            <a href="">More</a>
+        </div>
+    </section>
+     <!-- secsion more ends -->
 
-    <footer class="footer">
+    <!-- secsion brand starts -->
+    <section class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/logo-shop-brand/1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/logo-shop-brand/2.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/logo-shop-brand/3.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/logo-shop-brand/4.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/logo-shop-brand/5.png" alt="">
+          </div>
+         
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </section>
+     <!-- secsion brand ends -->
+
+
+    <footer class="footer-top">
         <div class="footer-container">
-
-            <div class="footer-left flex">
-                <div class="footer-left-logo">
-                    <img src="./images/logo1.png" alt="">
-                </div>
+           
                 <div class="footer-left-contact">
-                        <h1>Contact</h1>
-                        <div class="contact-location flex mb-10">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p>521 lane, Co Nhue Street <br>North District of Tu Liem, Hanoi </p>
-                        </div>
-                        <div class="contact-phone flex mb-10">
-                            <i class="fas fa-phone"></i>
-                            <p>(+84) 356.897.495</p>
-                        </div>
-                        <div class="contact-mail flex mb-10">
-                            <i class="fas fa-envelope"></i>
-                            <p>dinhphu.le1806it@gmail.com</p>
-                        </div>
+                    <div class="logo-footer">
+                        <img src="./images/logo-footer/logo2.png" alt="">
+                    </div>
+                    <h1>Contact</h1>
+                    <div class="under"></div>
+                    <div class="contact-location flex">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>521 lane, Co Nhue Street <br>North District of Tu Liem, Hanoi </p>
+                    </div>
+                    <div class="contact-phone flex">
+                        <i class="fas fa-phone"></i>
+                        <p>(+84) 356.897.495</p>
+                    </div>
+                    <div class="contact-mail flex">
+                        <i class="fas fa-envelope"></i>
+                        <p>dinhphu.le1806it@gmail.com</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="footer-right flex">
-                <div class="footer-right-support">
+                <div class="footer-middle-support">
                     <h1>Support</h1>
+                    <div class="under"></div>
                     <ul class="footer-right-links">
                         <a href="#" class="footer-right-link">About</a>                       
                         <a href="#" class="footer-right-link">FAQ</a>                  
@@ -807,22 +839,24 @@
                         <a href="#" class="footer-right-link">Contact</a>
                     </ul>
                 </div>
+
                 <div class="footer-right-socials">
                     <h1>About Us</h1>
+                    <div class="under"></div>
                     <ul class="footer-right-social">
                          
-                        <a href="#!" style="color: #436b9f;"  class="footer-link-left"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#!" style="color: #436b9f;"  class="footer-link-left"><i class="fab fa-facebook-square" title="facebook"></i></a>
                   
-                        <a href="#!" style="color: #1DA1F2;" class="footer-link-left"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#!" style="color: #1DA1F2;" class="footer-link-left"><i class="fab fa-twitter-square" title="twitter"></i></a>
                                  
-                        <a href="#!" style="color: #d1407a;" class="footer-link-left"><i class="fab fa-instagram-square"></i></a>
+                        <a href="#!" style="color: #d1407a;" class="footer-link-left"><i class="fab fa-instagram-square" title="instagram"></i></a>
                                       
-                        <a href="#!" style="color: red;" class="footer-link-left"><i class="fab fa-youtube"></i></a>
+                        <a href="#!" style="color: red;" class="footer-link-left"><i class="fab fa-youtube" title="youtube"></i></a>
                      
-                        <a href="#!" style="color: #0077B5;" class="footer-link-left"><i class="fab fa-linkedin"></i></a>
+                        <a href="#!" style="color: #0077B5;" class="footer-link-left"><i class="fab fa-linkedin" title="linkedin"></i></a>
                     </ul>
                     <div class="sign-up-imformation">
-                        <h1>Sign up to receive news</h1>
+                        <h1>Receive news</h1>
                         <form action="post" class="input">
                             <input type="email" placeholder="Email ...">
                             <input type="submit" value="Sign up">
@@ -836,14 +870,16 @@
                         <img src="./images/payment/payment5.png" alt="VerSign">
                     </div>
                 </div>
-            </div>
 
         </div>
     </footer>
 
+    
     <div class="footer-bottom">
         <p>Copyright © 2022 by Dinhphu1806 . All Rights Reserved.</p>
     </div>
+       <!-- section banner product ends -->
+       
     <div class="back-to-top">
         <a class="btn-top" href="#"><i class="fas fa-caret-square-up"></i></a>
     </div>
@@ -851,6 +887,7 @@
     
      
     <!-- modal user profile ends -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <script src="./src/js/bar.js"></script>
     <script src="./src/js/modalSearch.js"></script>
@@ -858,5 +895,6 @@
     <script src="./src/js/filterWatch.js"></script>
     <script src="./src/js/backToTop.js"></script>
     <script src="./src/js/slideShow.js"></script>
+    <script src="./src/js/slideBrand.js"></script>
 </body>
 </html>
