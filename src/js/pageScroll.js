@@ -13,9 +13,13 @@ ScrollReveal().reveal('.banner-h1', {
     delay: 500,
     origin: 'right'
 });
-ScrollReveal().reveal('.banner-shop-container', { 
+ScrollReveal().reveal('.banner-scroll-left', { 
     delay: 500,
-    origin: 'top'
+    origin: 'left'
+});
+ScrollReveal().reveal('.banner-scroll-right', { 
+    delay: 500,
+    origin: 'right'
 });
 
 ScrollReveal().reveal('.underline', { 
