@@ -91,15 +91,44 @@ body{
 }
 
 
+.btn a{
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: var(--btn-color);
+    letter-spacing: 2px;
+    border-radius: 40px;
+    /* background:linear-gradient(90deg, #0162c8, #55e7fc); */
+    background-color: var(--btn-bg);
+    overflow: hidden;
+}
+.btn a span{
+    position: absolute;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+@keyframes animate {
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: .5;
+    }
+    100%{
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
 
-  
 
-
-
-
-
-
-.login a{
+/* .login a{
     background-color: rgba(255, 255, 255, 0.669);
     border-radius: 5px;
     padding: 10px 30px;
@@ -113,7 +142,7 @@ body{
 .login a:hover{
     background-color: var(--black);
     color: var(--btn-color);
-}
+} */
 
 .icon{
     display: flex;
@@ -258,20 +287,12 @@ body{
     .icon{
         margin-right: 5px;
     }
-    .login a{
+    /* .login a{
         padding: 10px 20px;
         font-weight: 300;
         font-size: 14px;
-    }
-     .underline-green::after {
-        content: "";
-        position: absolute;
-        top: 68%;
-        left: 46% !important;
-        width: 170px !important;
-        
-      }
-    
+    } */
+
     
       
         
@@ -319,14 +340,14 @@ body{
     .header .login{
         margin-top: 20px;
     }
-    .header .navbar .login a{
-        border-radius: 5px;
-        padding: 10px 30px;
-        background-color: var(--btn-color);
-        color: var(--black);
-        font-weight: 300;
+    .btn a{
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 10px;
         font-size: 16px;
     }
+  
     .header .navbar.active{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
