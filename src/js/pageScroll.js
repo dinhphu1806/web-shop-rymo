@@ -4,9 +4,25 @@ ScrollReveal({
     duration: 2500,
     delay: 400
 });
-ScrollReveal().reveal('.banner-title', { 
+
+ScrollReveal().reveal('.banner-text', { 
     delay: 500,
     origin: 'left'
+});
+
+ScrollReveal().reveal('.logo-brand-item', { 
+    delay: 500,
+    origin: 'top'
+});
+
+ScrollReveal().reveal('.banner-title', { 
+    delay: 500,
+    origin: 'top'
+});
+
+ScrollReveal().reveal('.shop-now', { 
+    delay: 500,
+    origin: 'bottom'
 });
 
 ScrollReveal().reveal('.banner-h1', { 
