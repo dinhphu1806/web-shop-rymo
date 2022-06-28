@@ -423,6 +423,7 @@ body{
 
 /* CSS logo brand */
 .logo-brand{
+    overflow: hidden;
     width: 100%;
 }
 .logo-brand-item{
@@ -437,6 +438,7 @@ body{
     grid-template-columns: repeat(auto-fit, minmax(190px,1fr)); 
     gap: 10px;
     padding: 0 40px;
+    overflow: hidden;
 
 }
 .banner-shop-container img{
