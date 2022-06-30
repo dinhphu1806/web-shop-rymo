@@ -131,9 +131,21 @@
 
                 <div class="details-info">
                     <h1>The Longines Master Collection</h1>
-                    <div style="display: flex" class="trade-mark">
-                        <span>Trade-mark: <p>Fossil</p></span>
+                    <div class="brand-segment">
+                        <div style="display: flex" class="brand-name-outer">
+                            <span>Brand: </span>
+                            <b>Fossil</b>
+                        </div>
+                        <div class="condition-field">
+                            <span class="status">Status: </span>
+                            <b>New</b>
+                        </div>
+                        <div class="sale-at-field">
+                            <span class="status">Sale at: </span>
+                            <b>Vietnam</b>
+                        </div>
                     </div>
+                    
                     <div class="star-reviews">
                         <div class="sold-star">
                             <i class="fas fa-star"></i>
@@ -141,6 +153,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
+                            <span>4.9</span>
                         </div>
                         <div class="sold-reviews">
                             (2,548 reviews)
@@ -149,18 +162,41 @@
                     <div class="filter-prices">
                         <span>₫349.000</span>  <p>₫498.000</p>  
                     </div>
-                    <div class="size">
-                        <span>S</span>
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
-                    </div>
-                    <div class="quantity-content">
+                    <div class="select-details">
+                        <div class="size-content">
+                            Select size:
+                            <select name="" id="">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        
                         <div class="quantity">
                             <span>Số lượng: <input type="number" value="1" min="0"></span>
                         </div>
+                    </div>
+                    <div class="add-to-cart">
+                        
                         
                         <a href="">Add to cart</a>
+                    </div>
+
+                    <div class="product-description">
+                        <h1>Product Description</h1>
+                        <div class="under"></div>
+                        <h3>Genuine LONGlNES Master Collection Benzel Men's Watch 18k L2.628.5.38.7 (L26285387), 38.5mm:</h3>
+                        <p>- Brand new fullbox seal, full box of card book</p>
+                        <p>- Model: L2.628.5.38.7</p>
+                        <p>- Face diameter: 38.5mm</p>
+                        <p>- Dimensions are 18mm wide</p>
+                        <p>- 12 diamond hour markers</p>
+                        <p>- Gold face, gold braces with pure 18k gold demi band</p>
+                        <p>- Movement: Automatic Longines Caliber L619/888, 28’800 vph, 42-hour power reserve</p>
+                        <p>- Glass: High quality monolithic sapphire anti-scratch anti-glare</p>
+                        <p>- Water resistant: 30m</p>
+                        <p></p>
                     </div>
                 </div>
 
@@ -255,10 +291,77 @@
         <a class="btn-top" href="#"><i class="fas fa-caret-square-up"></i></a>
     </div>
 
+      <!-- modal - login -->
+      <div class="modal js-modal" >
+        <div class="modal-container js-modal-container">
+          <div class="modal-close js-modal-close">X</div>
+          <div class="modal-content">
+              <div class="modal-title-text">
+                  <div class="modal-title login">
+                     Login
+                  </div>
+                  <div class="modal-title signup">
+                     Signup
+                  </div>
+               </div>
+               <div class="form-container">
+                  <div class="slide-controls">
+                     <input type="radio" name="slide" id="login" checked>
+                     <input type="radio" name="slide" id="signup">
+                     <label for="login" class="slide login">Login</label>
+                     <label for="signup" class="slide signup">Signup</label>
+                     <div class="slider-tab"></div>
+                  </div>
+                  <div class="form-inner">
+                      <!-- form-login -->
+                     <form action="#" class="login">
+                        <div class="field">
+                           <input type="text" placeholder="Email Address" required>
+                        </div>
+                        <div class="field">
+                           <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="pass-link">
+                           <a href="#">Forgot password?</a>
+                        </div>
+                        <div class="remember-me">
+                          <input type="checkbox" id="check-box">
+                          <span>Remember me</span>
+                        </div>
+                        <div class="field btn">
+                           <div class="btn-layer"></div>
+                           <input type="submit" value="Login">
+                        </div>
+                        <div class="signup-link">
+                           Not a member? <a href="">Signup now</a>
+                        </div>
+                     </form>
+                     <!-- form sign up -->
+                     <form action="#" class="signup">
+                        <div class="field">
+                           <input type="text" placeholder="Email Address" required>
+                        </div>
+                        <div class="field">
+                           <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="field">
+                           <input type="password" placeholder="Confirm password" required>
+                        </div>
+                        <div class="field btn">
+                           <div class="btn-layer"></div>
+                           <input type="submit" value="Signup">
+                        </div>
+                     </form>    
+                  </div>
+               </div>
+  
+  
+          </div>
+        </div>
+      </div>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-    <script src="./src/js/bar.js"></script>
     <script src="./src/js/modalSearch.js"></script>
     <script src="./src/js/modalCart.js"></script>
     <script src="./src/js/filterWatch.js"></script>
@@ -267,6 +370,8 @@
     <script src="./src/js/slideBrand.js"></script>
     <script src="./src/js/pageScroll.js"></script>
     <script src="./src/js/btnClick.js"></script>
+    <script src="./src/js/modalLogin.js"></script>
+    <script src="./src/js/openModalLogin.js"></script>
 
     <script src="./src/js-details/detailsWatch.js"></script>
 </body>

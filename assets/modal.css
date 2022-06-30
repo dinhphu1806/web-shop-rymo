@@ -14,7 +14,7 @@
     --green: rgba(208, 214, 212, 0.686);
     --star: #ffce3d;
     --add-to-cart: #c30005;
-    --prices: #ee4d2d;
+    --prices: #ee4d#c300052d;
     --swiper-navigation-size: 20px !important;
     --swiper-theme-color:rgba(189, 174, 174, 0.724) !important;
     --bg-modal: rgba(104, 98, 98, 0.74);
@@ -192,7 +192,14 @@
         display: flex;
         flex-wrap: wrap;
     }
-    
+    .brand-segment{
+        font-size: 12px !important;
+    }
+    .star-reviews{
+        
+        font-size: 12px !important;
+     
+    }
 
     /*css modal login*/
     /* .modal{
@@ -203,6 +210,7 @@
        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
        border: 1px solid #ccc;
     }
+   
 
     
 }
@@ -239,7 +247,7 @@
     display: flex;
 }
 .details-content .details-list img{
-    height: 100px;
+    height: 70px;
     /* margin: 10px 0; */
     cursor: pointer;
     display: block;
@@ -260,18 +268,75 @@
     display: flex;
     
 }
+.details-info h1{
+    font-size: 32px;
+}
+.brand-segment{
+    display: flex;
+    font-size: 14px;
+}
+.brand-segment div{
+    margin-right: 10px
+}
+.brand-segment div span{
+    margin-right: 7px;
+}
 .star-reviews{
     display: flex;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.star-reviews .sold-star i{
+    color: var(--star);
+}
+.filter-prices{
+    margin: 10px 0;
+    font-size: 26px;
+}
+.select-details{
+    display: flex;
+    margin: 10px;
+}
+.size-content{
+    margin-right: 20px;
+}
+.size-content select{
+    padding: 7px 10px;
+}
+.size div{
+    margin-right: 10px;
 }
 .quantity-content{
     display: flex;
    
-    align-items: center;
+    
 }
 .quantity input{
     width: 40px;
-    padding: 10px 7px;
+    padding: 7px 7px;
 }
+/* .quantity input[value=""]{
+    margin-right: 10px;
+} */
+
+.product-description{
+     margin: 30px 0;
+}
+.product-description h1{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.product-description p{
+    font-size: 14px;
+}
+
+.under{
+    width: 100px;
+    height: 3px;
+    background-color: var(--red);
+}
+
+
 
 
 /*modal login*/
