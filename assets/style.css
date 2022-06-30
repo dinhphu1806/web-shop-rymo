@@ -36,6 +36,7 @@ html{
 }
 body{
     font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 
 /* CSS HEADER */
@@ -369,7 +370,10 @@ body{
     .filter-title h1{
         font-size: 20px !important;
     }
-   
+    .filter-search-product{
+        display: flex;
+        flex-direction: column;
+    }
     /*banner*/
     .banner-content h1{
         font-size: 32px;
@@ -413,9 +417,6 @@ body{
    .swiper-button-prev{
         display: none !important;
    }
-  
-
-
   
 
 
@@ -469,22 +470,39 @@ body{
     
     font-size: 22px;
 }
-/* .filter-title{
+
+.filter-search-product{
+    display: flex;
+    align-item: center;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+.search-product{
     position: relative;
-} */
-
-
-
-
-
+}
+.search-product input{
+    padding: 12px;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px 10px;
+}
+#icon-search{
+    position: absolute;
+    top: 35%; right: 3%;    
+    color: #ccc;
+}
 
 
 .filter-btns{
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; 
+    flex-wrap: wrap; 
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    /* margin: 20px 0; */
 }
 .filter-btn{
     background-color: none;
@@ -495,7 +513,6 @@ body{
     margin: 10px 10px;
     padding: 10px 10px;
     font-size: 16px;
-    /* color: #d3d3d3; */
     font-weight: 600;
     position: relative;
     transition: all 0.2s ease-in-out;
@@ -954,15 +971,7 @@ body{
 }
 
 
-/* .reveal{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-}
-.reveal.show{
-    transform: translateY(0);
-    opacity: 1;
-} */
+
 
 
   

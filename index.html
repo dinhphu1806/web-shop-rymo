@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <!-- lib animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+  
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
@@ -169,52 +170,64 @@
                <img src="./images/logo-watch/logo-watch.png" alt="">
                <h1>Our Watchs</h1>
             </div>
-
-            <div class="filter-btns">
-                <button type="button"class="filter-btn" id="all">All</button>
-                <button type="button" class="filter-btn" id="popular">Popular products</button>
-                <button type="button"class="filter-btn" id="promotional">Promotional products</button>
-                <button type="button" class="filter-btn" id="new">New products</button>
-            </div>
-            
-            <div class="filter-items">
-                <!-- item-1 -->
-                <div class="filter-item all popular">
-                       <a href="detailWatch1.html" class="detail-product">
-                            <div class="filter-item-img">
-                                <img src="./images/watch/detail-1/product-4.png" alt="">   
-                                <div class="filter-icon-inside">
-                                    <a class="more" title="Add to favorites" href="#"><i class="fa-solid fa-heart"></i></a>
-                                    <a class="more" title="Add to cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                    <a class="more" title="See details" href="#"><i class="fas fa-info-circle"></i></a>
-                                </div>     
-                            </div>
-
-                            <div class="filter-item-info">
-                                <div class="filter-info-name">
-                                    <a href="">The Longines Master Collection</a>
-                                </div>
-                                <div class="filter-prices">
-                                    <p>₫498.000</p>  <span>₫349.000</span>
-                                </div>
-                                <div class="sold">
-                                    <div class="sold-star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                    </div>
-                                    <div class="sold-text">
-                                        sold 5,2k
-                                    </div>
-                                </div>
-                            </div>
-                       </a>
-                        <div class="add-to-cart">
-                            <a href="#">Add to cart</a>
-                        </div>
+            <div class="filter-search-product">
+                <!-- filter -->
+                <div class="filter-btns">
+                    <button type="button"class="filter-btn" id="all">All</button>
+                    <button type="button" class="filter-btn" id="popular">Popular products</button>
+                    <button type="button"class="filter-btn" id="promotional">Promotional products</button>
+                    <button type="button" class="filter-btn" id="new">New products</button>
                 </div>
+                <!-- search -->
+                <div class="search-product">
+                    <input type="text" id="search-input" onkeyup="searchInput()"  placeholder="Search watch ...">
+                    <div class="fas fa-search" id="icon-search"></div>       
+                </div>
+            </div>
+           
+            
+            <div class="filter-items" id="filter-search">
+                <!-- item-1 -->
+                <div class="filter-item all popular ">
+                    <a href="detailWatch1.html">
+                        <div class="filter-item-img">
+                            <img src="./images/watch/detail-1/product-4.png " alt="">
+                            <span>-29%</span>
+                            <div class="filter-icon-inside">
+                                <a href="#" title="Add to favourites"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#" title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#" title="See details"><i class="fas fa-info-circle"></i></a>
+                            </div> 
+                        </div>
+                        <div class="filter-item-info">
+                            <div class="filter-info-name">
+                               <a href="">
+                                <h4>The Longines Master Collection</h4>
+                              </a>
+                            </div>
+                            <div class="filter-prices">
+                                <p>₫498.000</p>  <span>₫349.000</span>
+                            </div>
+                            <div class="sold">
+                                <div class="sold-star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="sold-text">
+                                    sold 5,2k
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="add-to-cart">
+                        <a href="#">Add to cart</a>
+                    </div>
+                </div>
+
+                
 
                  <!-- item-2 -->
                  <div class="filter-item all promotional">
@@ -230,7 +243,9 @@
                             </div>
                             <div class="filter-item-info">
                                 <div class="filter-info-name">
-                                   <a href="">Fossil Men's ME3104 Automatic Self-Wind</a>
+                                   <a href="">
+                                    <h4>Fossil Men's ME3104 Automatic Self-Wind</h4>
+                                   </a>
                                 </div>
                                 <div class="filter-prices">
                                     <p>₫498.000</p>  <span>₫349.000</span>
@@ -268,7 +283,9 @@
                         </div>
                         <div class="filter-item-info">
                             <div class="filter-info-name">
-                               <a href="">BENYAR Men’s Watch Amazon Analog</a>
+                               <a href="">
+                                    <h4>BENYAR Men’s Watch Amazon Analog</h4>
+                               </a>
                             </div>
                             <div class="filter-prices">
                                 <p>₫1.350.000</p>  <span>₫959.000</span>
@@ -305,7 +322,9 @@
                         </div>
                         <div class="filter-item-info">
                             <div class="filter-info-name">
-                               <a href="">Omega Seamaster Aqua 2517.5 Pre-Owned</a>
+                               <a href="">
+                                    <h4>Omega Seamaster Aqua 2517.5 Pre-Owned</h4>
+                               </a>
                             </div>
                             <div class="filter-prices">
                                 <p>₫498.000</p>  <span>₫349.000</span>
@@ -343,7 +362,9 @@
                         </div>
                         <div class="filter-item-info">
                             <div class="filter-info-name">
-                               <a href="">Omega Seamaster Chronomete Watch</a>
+                               <a href="">
+                                    <h4>Omega Seamaster Chronomete Watch</h4>
+                               </a>
                             </div>
                             <div class="filter-prices">
                                 <p>₫689.000</p>  <span>₫559.000</span>
@@ -381,7 +402,9 @@
                         </div>
                         <div class="filter-item-info">
                             <div class="filter-info-name">
-                               <a href="">RELOGIO MICHAEL KORS MK3724 - MK3724</a>
+                               <a href="">
+                                    <h4>RELOGIO MICHAEL KORS MK3724 - MK3724</h4>
+                               </a>
                             </div>
                             <div class="filter-prices">
                                 <p>₫845.000</p>  <span>₫756.000</span>
@@ -419,7 +442,9 @@
                         </div>
                         <div class="filter-item-info">
                             <div class="filter-info-name">
-                               <a href="">Michael Kors Mk8481 Watch</a>
+                               <a href="">
+                                    <h4>Michael Kors Mk8481 Watch</h4>
+                               </a>
                             </div>
                             <div class="filter-prices">
                                 <p>₫689.000</p>  <span>₫539.000</span>
@@ -457,7 +482,9 @@
                         </div>
                         <div class="filter-item-info">
                             <div class="filter-info-name">
-                               <a href="">Museum Classic Gold-Toned Link Bracelet</a>
+                               <a href="">
+                                    <h4>Museum Classic Gold-Toned Link Bracelet</h4>
+                               </a>
                             </div>
                             <div class="filter-prices">
                                 <p>₫1.490.000</p>  <span>₫1.230.000</span>
@@ -495,7 +522,9 @@
                         </div>
                         <div class="filter-item-info">
                             <div class="filter-info-name">
-                               <a href="">Bulova Heart 96A194 Automatic Black Dial</a>
+                               <a href="">
+                                <h4>Bulova Heart 96A194 Automatic Black Dial</h4>
+                               </a>
                             </div>
                             <div class="filter-prices">
                                 <p>₫560.000</p>  <span>₫449.000</span>
@@ -532,7 +561,9 @@
                         </div>
                         <div class="filter-item-info">
                             <div class="filter-info-name">
-                               <a href="">Museum Classic Gold-Toned Link Bracelet</a>
+                               <a href="">
+                                    <h4>Museum Classic Gold-Toned Link Bracelet</h4>
+                               </a>
                             </div>
                             <div class="filter-prices">
                                 <p>₫788.000</p>  <span>₫679.000</span>
@@ -895,7 +926,7 @@
     </div>
      
     <!-- modal - login -->
-    <div class="modal js-modal">
+    <div class="modal js-modal" >
       <div class="modal-container js-modal-container">
         <div class="modal-close js-modal-close">X</div>
         <div class="modal-content">
@@ -972,6 +1003,7 @@
     <script src="./src/js/modalSearch.js"></script>
     <script src="./src/js/modalCart.js"></script>
     <script src="./src/js/filterWatch.js"></script>
+    <script src="./src/js/searchWatch.js"></script>
     <script src="./src/js/backToTop.js"></script>
     <script src="./src/js/slideShow.js"></script>
     <script src="./src/js/slideBrand.js"></script>
