@@ -52,7 +52,7 @@ body{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 10px 50px;
+	padding: 10px 70px;
 	/* border-radius: 4px; */
 }
 .header .logo{
@@ -63,6 +63,7 @@ body{
 	text-transform: capitalize;
 	color: #e91e63;
 	font-weight: 600;
+    letter-spacing: 3px;
 }
 
 .header .nav-menu{
@@ -359,12 +360,12 @@ body{
 
 /* media query */
 @media (max-width: 1024px) {
-    .header{
+    /* .header{
         padding: 1rem 3rem;
-    }
-    .header .logo img{
+    } */
+    /* .header .logo img{
         width: 110px;
-    }
+    } */
     /* .icon{
         margin-right: 10px;
     }
@@ -393,7 +394,7 @@ body{
     }  
     
     .header-main{
-        padding: 10px 20px;
+        padding: 10px 60px;
         /* border-radius: 4px; */
     }
     .header .menu > .menu-item-has-children:hover > .sub-menu{
@@ -475,14 +476,16 @@ body{
         transition: all 0.3s ease;
     }
     @media(max-width: 991px){
-        /* .menu{
-            display: flex;
-            flex-direction: column;
-            /* justify-content: flex-start ; */
-        /* }  */
         .header-main{
-            padding: 10px 0px;
+            padding: 10px 20px;
             /* border-radius: 4px; */
+        }
+        .header .logo{
+            padding: 0 10px;
+        }
+        .header .logo a{
+            font-size: 20px;
+         
         }
         .header .menu-overlay.active{
         visibility: visible;
