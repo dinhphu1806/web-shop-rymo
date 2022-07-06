@@ -86,7 +86,12 @@ body{
 	font-weight: 600;
 	transition: all 0.3s ease;
 }
-.header .menu > .menu-item > a .plus{
+
+.header .menu .menu-item:hover i{
+    transform: rotate(180deg);
+    transition: all 0.5s linear;
+}
+/* .header .menu > .menu-item > a .plus{
 	display: inline-block;
 	height: 12px;
 	width: 12px;
@@ -106,14 +111,14 @@ body{
 	width: 100%;
 	transform: translate(-50%,-50%);
 	transition: all 0.3s ease;
-}
-.header .menu > .menu-item:hover > a .plus:before,
-.header .menu > .menu-item:hover > a .plus:after{
+} */
+/* .header .menu > .menu-item:hover > a .down:before,
+.header .menu > .menu-item:hover > a .down:after{
    background-color: #e91e63;
-}
-.header .menu > .menu-item > a .plus:after{
-   transform: translate(-50%,-50%) rotate(-90deg);	
-}
+} */
+/* .header .menu > .menu-item > a .plus:after{
+   transform: translate(-50%,-50%) rotate(180deg);	
+} */
 .header .menu > .menu-item > .sub-menu > .menu-item > a:hover,
 .header .menu > .menu-item:hover > a{
 	color: #e91e63;
@@ -132,7 +137,109 @@ body{
 	opacity:0;
 	visibility: hidden;
 }
-.btn{
+.header .menu > .menu-item > .sub-menu > .menu-item{
+    display: block;
+}
+.header .menu > .menu-item > .sub-menu > .menu-item > a{
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+.header .menu > .menu-item-has-children:hover > .sub-menu{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+ }
+.header .open-nav-menu{
+    height: 34px;
+    width: 40px;
+    margin-right: 15px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.header .open-nav-menu span{
+    display: block;
+    height: 3px;
+    width: 24px;
+    background-color: #000000;
+    position: relative;
+}
+.header .open-nav-menu span:before,
+.header .open-nav-menu span:after{
+    content: '';
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    box-sizing: border-box;
+}
+.header .open-nav-menu span:before{
+    top:-7px;
+}
+.header .open-nav-menu span:after{
+    top:7px;
+}
+.header .close-nav-menu{
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff;
+    margin:0 0 15px 15px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.header .close-nav-menu img{
+    width: 16px;
+}
+.header .menu-overlay{
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.5);
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    opacity:0;
+    transition: all 0.3s ease;
+}
+
+.cart-shopping{ 
+    position: relative;
+    display: none;
+}
+.cart-shopping a{
+    font-size: 20px;
+    color: #4b4747;
+}
+.cart::after{
+    content: '';
+    position: absolute;
+    top: -5px; right: -5px;
+    width: 14px;
+    height: 14px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+}
+.cart-shopping span{
+    font-size: 10px;
+    position: absolute;
+    top: -3px; right: -1px;
+    z-index: 10;
+    color: #717171;
+}
+
+
+
+/* .btn{
     margin-left: 20px   ;
 }
  .btn a{
@@ -168,7 +275,7 @@ body{
         height: 500px;
         opacity: 0;
     }
-}
+} */
 /* CSS HEADER */
 /* .header{  
     display: flex;
@@ -360,122 +467,26 @@ body{
 
 /* media query */
 @media (max-width: 1024px) {
-    /* .header{
-        padding: 1rem 3rem;
-    } */
-    /* .header .logo img{
-        width: 110px;
-    } */
-    /* .icon{
-        margin-right: 10px;
-    }
-    */
+   
 }
-/* @media (max-width: 910px) {
-    .header{
-        overflow: hidden;
-        padding: 1rem 2.5rem;
-    }
-    .header .logo img{
-        width: 110px;
-    }
-    .login a{
-        padding: 10px 25px;
-        color: var(--black);
-        border: 2px solid var(--black);
-        font-size: 16px;
-    }
-   
-   
-} */
-@media(min-width: 992px){
+
+@media(max-width: 910px){
    .header .nav-menu{
         padding: 0 15px;
     }  
     
     .header-main{
-        padding: 10px 60px;
+        padding: 10px 30px;
         /* border-radius: 4px; */
     }
-    .header .menu > .menu-item-has-children:hover > .sub-menu{
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
-     }
-     .header .menu > .menu-item-has-children:hover > a .plus:after{
-        transform: translate(-50%,-50%) rotate(0deg);		
-     }
+    .header .menu > .menu-item{
+        margin-left: 25px;
+        
     }
-    .header .menu > .menu-item > .sub-menu > .menu-item{
-        display: block;
-    }
-    .header .menu > .menu-item > .sub-menu > .menu-item > a{
-        display: block;
-        padding: 10px 20px;
-        font-size: 16px;
-        font-weight: 600;
-        color: #000000;
-        transition: all 0.3s ease;
-        text-transform: capitalize;
-    }
-    .header .open-nav-menu{
-        height: 34px;
-        width: 40px;
-        margin-right: 15px;
-        display: none;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-    }
-    .header .open-nav-menu span{
-        display: block;
-        height: 3px;
-        width: 24px;
-        background-color: #000000;
-        position: relative;
-    }
-    .header .open-nav-menu span:before,
-    .header .open-nav-menu span:after{
-        content: '';
-        position: absolute;
-        left:0;
-        width: 100%;
-        height: 100%;
-        background-color: #000000;
-        box-sizing: border-box;
-    }
-    .header .open-nav-menu span:before{
-        top:-7px;
-    }
-    .header .open-nav-menu span:after{
-        top:7px;
-    }
-    .header .close-nav-menu{
-        height: 40px;
-        width: 40px;
-        background-color: #ffffff;
-        margin:0 0 15px 15px;
-        cursor: pointer;
-        display: none;
-        align-items: center;
-        justify-content: center;
-    }
-    .header .close-nav-menu img{
-        width: 16px;
-    }
-    .header .menu-overlay{
-        position: fixed;
-        z-index: 999;
-        background-color: rgba(0,0,0,0.5);
-        left:0;
-        top:0;
-        height: 100%;
-        width: 100%;
-        visibility: hidden;
-        opacity:0;
-        transition: all 0.3s ease;
-    }
-    @media(max-width: 991px){
+    
+}
+    
+@media(max-width: 768px){
         .header-main{
             padding: 10px 20px;
             /* border-radius: 4px; */
@@ -484,7 +495,7 @@ body{
             padding: 0 10px;
         }
         .header .logo a{
-            font-size: 20px;
+            font-size: 25px;
          
         }
         .header .menu-overlay.active{
@@ -525,12 +536,9 @@ body{
         .header .menu > .menu-item:first-child > a{
             border-top: 1px solid #333333;	
         }
-        .header .menu > .menu-item > a .plus:before, 
-        .header .menu > .menu-item > a .plus:after{
-            background-color: #ffffff;
-        }
-        .header .menu > .menu-item-has-children.active > a .plus:after{
-            transform: translate(-50%,-50%) rotate(0deg);
+        .header .menu .menu-item:hover i{
+            transform: rotate(0deg);
+            transition: all 0.5s linear;
         }
         .header .menu > .menu-item > .sub-menu{
             width: 100%;
@@ -556,116 +564,35 @@ body{
         .header .open-nav-menu{
             display: flex;
         }
-    }
+        .cart-shopping{ 
+            position: absolute;
+            right: 15%;
+            display: block;
+        }
+}
     
-    
-@media (max-width: 910px) {
-    /* .header{
-        padding: .8rem 1rem;
+    @media (max-width: 548px) {
+        .cart-shopping{ 
+            position: absolute;
+            right: 20%;
+        }
     }
-    .header .logo img{
-        width: 90px;
+    @media (max-width: 380px) {
+        .header-main{
+            padding: 10px 10px;
+            /* border-radius: 4px; */
+        }
+        .cart-shopping{ 
+            position: absolute;
+            right: 27%;
+        }
+        
     }
-   
-    .icon div{
-        font-size: 14px;
-        margin: 0 10px;
-    }
-    .search-form{
-        position: absolute;
-        top: 0; right: 0;
-    }
-    .menu{
-        margin-right: 40px;;
-    }
-    .menu li{
-        padding: .8rem .6rem;
-    }
-    .menu li a{
-        font-size: 14px;
-    }
-    .icon{
-        margin-right: 5px;
-    } */
-    /* .login a{
-        padding: 10px 20px;
-        font-weight: 300;
-        font-size: 14px;
-    } */
 
-    
-      
-        
-        
-     }
     
 
 @media (max-width: 768px) {
-    /* .header{
-        padding: .8rem 1.5rem;
     
-    }
-   #menu-btn{
-        display: block;
-   }
-   .icon div{
-        font-size: 20px;
-        color: var(--black);
-    }
-   
-    .header .navbar{
-        position: fixed;
-        top: 0;right: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: var(--main-bg-color);
-        width: 100%;
-        height: 100vh;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        transition: all 0.2s linear;
-        z-index: 99;
-        padding: 10px 50px;
-    }
-   
-    .header ul{
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-      
-    }
-    .header ul li a{
-        color: var(--btn-bg);
-    }
-    .header .login{
-        margin-top: 20px;
-    }
-    .btn a{
-        position: relative;
-        display: inline-block;
-        padding: 10px 20px;
-        border-radius: 10px;
-        font-size: 16px;
-    }
-  
-    .header .navbar.active{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-    .fa-times{
-        color: #fff;
-        z-index: 100;
-        font-size: 18px;
-        font-weight: bold;
-        position: absolute;
-        right:  4%;
-    }
-    .fa-times::before{
-        content: ' ';
-        width: 50px;
-        height: 50px;
-        border: 2px solid var(--grey);    
-        padding: 5px 10px;
-    } */
     .filter-title h1{
         font-size: 20px !important;
     }
@@ -716,7 +643,7 @@ body{
    .swiper-button-prev{
         display: none !important;
    }
-  
+   
 
 
 }

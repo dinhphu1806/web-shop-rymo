@@ -15,94 +15,86 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-     <!-- header-starts -->
-    <header class="header">
-        <div class="logo">
-            <a href="index.html">
-                <img src="./images/logo-rymo/logo1.png" alt="">
-            </a>
-        </div>
-       
-        <nav class="navbar">
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Shop <i class="fas fa-angle-down"></i></a></li>
-                <li><a href="detailWatch1.html">Product</a></li>
-                <li><a href="#">Blog</a></li> 
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="btn" id="login-btn">
-                <a id="click-btn" href="#">Login</a>
+   <!-- header start -->
+   <header class="header">
+    <div class="container">
+        <div class="header-main">
+
+                <div class="logo">
+                    <a href="index.html">
+                        Rymo.
+                        <!-- <img src="./images/logo-rymo/logo1.png" alt=""> -->
+                    </a>
+                </div>
+
+            <div class="open-nav-menu">
+                <span></span>
             </div>
-        </nav>
-       
-        <div class="icon">
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fa-solid fa-cart-shopping" id="cart-btn"></div>
-            <div class="fas fa-bars"  id="menu-btn"></div>
-        </div>
 
-      
-         <!-- modal search form -->
-         <div class="search-form">
-            <input type="text" id="search" value="" placeholder="search ...">
-            <label for="search-box"><i class="fa-solid fa-magnifying-glass"></i></label>
-        </div>
-
-       <!-- modal cart  -->
-        <div class="cart-form">
-            <div class="cart-container cart-container-js">
-                <div class="cart-content">
-                    <h2>My Cart</h2>
-                    <div class="cart-list">
-
-                        <div class="cart-item">
-                            <img src="./images/balo/detail-1/poly chuck plus 1.0.jpg" alt="">
-                            <div class="cart-item-name">
-                                <h3>Jeans Men Fashion</h3>
-                                <div class="cart-item-prices">
-                                    $ 55,7
-                                </div>
-                            </div>
-                            <span>X</span>
-                        </div>
-
-                        <div class="cart-item">
-                            <img src="./images/watch/detail-1/product-1.jpg" alt="">
-                            <div class="cart-item-name">
-                                <h3>Jeans Men Fashion</h3>
-                                <div class="cart-item-prices">
-                                    $  70,5
-                                </div>
-                            </div>
-                            <span>X</span>
-                        </div>
-
-                        <div class="cart-item">
-                            <img src="./images/shoes/detail-1/black-shoes.jpg" alt="">
-                            <div class="cart-item-name">
-                                <h3>Jeans Men Fashion</h3>
-                                <div class="cart-item-prices">
-                                    $  70,5
-                                </div>
-                            </div>
-                            <span>X</span>
-                        </div>
-                    </div>
-                    <div class="total">
-                        <span>Total: </span>
-                        <p style="font-weight: bold; margin-left: 10px;">$ 196,7</p>
-                    </div>
-                    <div class="check-out">
-                        <a href="#">Checkout</a>
-                    </div>
-                </div> 
+            <div class="menu-overlay">
             </div>
+
+            <!-- navigation menu start -->
+            <nav class="nav-menu">
+
+                <div class="close-nav-menu">
+                <img src="./images/close.svg" alt="close">
+                </div>
+
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#">Home</a>  
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#" data-toggle="sub-menu">Product <i class="plus"></i></a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Clothes</a></li>
+                            <li class="menu-item"><a href="#watch">Watch</a></li>
+                            <li class="menu-item"><a href="#">Backpack</a></li>
+                            <li class="menu-item"><a href="#">Shoes</a></li>
+                            <li class="menu-item"><a href="#">Others</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#" data-toggle="sub-menu">Pages <i class="plus"></i></a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">page 1</a></li>
+                            <li class="menu-item"><a href="#">page 2</a></li>
+                            <li class="menu-item"><a href="#">page 3</a></li>
+                            <li class="menu-item"><a href="#">page 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a githref="#">News</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Contact</a>
+                    </li>
+                    
+                </ul>
+                <!-- <div class="btn" id="login-btn">
+                    <a id="click-btn" href="#">Login</a>
+                </div> -->
+               
+            </nav>
+
+             <!-- modal search form -->
+            <div class="search-form">
+                <input type="text" id="search" value="" placeholder="search ...">
+                <label for="search-box"><i class="fa-solid fa-magnifying-glass"></i></label>
+            </div>
+            <!-- navigation menu end -->
+            <!-- <div class="icon">
+                <div class="fas fa-search" id="search-btn"></div>
+                <div class="fa-solid fa-cart-shopping" id="cart-btn"></div>
+                <div class="fas fa-bars"  id="menu-btn"></div> -->
         </div>
-        
-    </header>
-    <!-- header-ends -->
+    </div>
+</header>
+<!-- header end -->
 
     <!-- detail-1 -->
      <section class="details">
@@ -128,7 +120,7 @@
                 </div>
 
                 <div class="details-info">
-                    <h1>Happy Sailed Womens Summer Boho Floral</h1>
+                    <!-- <h1></h1>
                     <div class="star-reviews">
                         <div class="sold-star">
                             <i class="fas fa-star"></i>
@@ -156,6 +148,72 @@
                         </div>
                         
                         <a href="">Add to cart</a>
+                    </div> -->
+                    <h1>Happy Sailed Womens Summer Boho Floral</h1>
+                    <div class="brand-segment">
+                        <div style="display: flex" class="brand-name-outer">
+                            <span>Brand: </span>
+                            <b>Fossil</b>
+                        </div>
+                        <div class="condition-field">
+                            <span class="status">Status: </span>
+                            <b>New</b>
+                        </div>
+                        <div class="sale-at-field">
+                            <span class="status">Sale at: </span>
+                            <b>Vietnam</b>
+                        </div>
+                    </div>
+                    
+                    <div class="star-reviews">
+                        <div class="sold-star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.9</span>
+                        </div>
+                        <div class="sold-reviews">
+                            (1,290 reviews)
+                        </div>
+                    </div>  
+                    <div class="filter-prices">
+                        <span>₫349.000</span>  <p>₫498.000</p>    
+                    </div>
+                    <div class="select-details">
+                        <!-- <div class="size-content">
+                            Select size:
+                            <select name="" id="">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div> -->
+                        
+                        <div class="quantity">
+                            <span>Số lượng: <input type="number" value="1" min="0"></span>
+                        </div>
+                    </div>
+                    <div class="add-to-cart">                        
+                        <a href="">Add to cart</a>
+                    </div>
+
+                    <div class="product-description">
+                        <h1>Product Description</h1>
+                        <div class="under"></div>
+                        <h3>Genuine LONGlNES Master Collection Benzel Men's Watch 18k L2.628.5.38.7 (L26285387), 38.5mm:</h3>
+                        <p>- Brand new fullbox seal, full box of card book</p>
+                        <p>- Model: L2.628.5.38.7</p>
+                        <p>- Face diameter: 38.5mm</p>
+                        <p>- Dimensions are 18mm wide</p>
+                        <p>- 12 diamond hour markers</p>
+                        <p>- Gold face, gold braces with pure 18k gold demi band</p>
+                        <p>- Movement: Automatic Longines Caliber L619/888, 28’800 vph, 42-hour power reserve</p>
+                        <p>- Glass: High quality monolithic sapphire anti-scratch anti-glare</p>
+                        <p>- Water resistant: 30m</p>
+                        <p></p>
                     </div>
                 </div>
 

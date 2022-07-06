@@ -15,94 +15,86 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-     <!-- header-starts -->
-    <header class="header">
-        <div class="logo">
-            <a href="index.html">
-                <img src="./images/logo-rymo/logo1.png" alt="">
-            </a>
-        </div>
-       
-        <nav class="navbar">
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Shop <i class="fas fa-angle-down"></i></a></li>
-                <li><a href="detailWatch1.html">Product</a></li>
-                <li><a href="#">Blog</a></li> 
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="btn" id="login-btn">
-                <a id="click-btn" href="#">Login</a>
-            </div>
-        </nav>
-       
-        <div class="icon">
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fa-solid fa-cart-shopping" id="cart-btn"></div>
-            <div class="fas fa-bars"  id="menu-btn"></div>
-        </div>
+     <!-- header start -->
+     <header class="header">
+        <div class="container">
+            <div class="header-main">
 
-      
-         <!-- modal search form -->
-         <div class="search-form">
-            <input type="text" id="search" value="" placeholder="search ...">
-            <label for="search-box"><i class="fa-solid fa-magnifying-glass"></i></label>
-        </div>
-
-       <!-- modal cart  -->
-        <div class="cart-form">
-            <div class="cart-container cart-container-js">
-                <div class="cart-content">
-                    <h2>My Cart</h2>
-                    <div class="cart-list">
-
-                        <div class="cart-item">
-                            <img src="./images/balo/detail-1/poly chuck plus 1.0.jpg" alt="">
-                            <div class="cart-item-name">
-                                <h3>Jeans Men Fashion</h3>
-                                <div class="cart-item-prices">
-                                    $ 55,7
-                                </div>
-                            </div>
-                            <span>X</span>
-                        </div>
-
-                        <div class="cart-item">
-                            <img src="./images/watch/detail-1/product-1.jpg" alt="">
-                            <div class="cart-item-name">
-                                <h3>Jeans Men Fashion</h3>
-                                <div class="cart-item-prices">
-                                    $  70,5
-                                </div>
-                            </div>
-                            <span>X</span>
-                        </div>
-
-                        <div class="cart-item">
-                            <img src="./images/shoes/detail-1/black-shoes.jpg" alt="">
-                            <div class="cart-item-name">
-                                <h3>Jeans Men Fashion</h3>
-                                <div class="cart-item-prices">
-                                    $  70,5
-                                </div>
-                            </div>
-                            <span>X</span>
-                        </div>
+                    <div class="logo">
+                        <a href="index.html">
+                            Rymo.
+                            <!-- <img src="./images/logo-rymo/logo1.png" alt=""> -->
+                        </a>
                     </div>
-                    <div class="total">
-                        <span>Total: </span>
-                        <p style="font-weight: bold; margin-left: 10px;">$ 196,7</p>
+
+                <div class="open-nav-menu">
+                    <span></span>
+                </div>
+
+                <div class="menu-overlay">
+                </div>
+
+                <!-- navigation menu start -->
+                <nav class="nav-menu">
+
+                    <div class="close-nav-menu">
+                    <img src="./images/close.svg" alt="close">
                     </div>
-                    <div class="check-out">
-                        <a href="#">Checkout</a>
-                    </div>
-                </div> 
+
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="#">Home</a>  
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" data-toggle="sub-menu">Product <i class="plus"></i></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">Clothes</a></li>
+                                <li class="menu-item"><a href="#watch">Watch</a></li>
+                                <li class="menu-item"><a href="#">Backpack</a></li>
+                                <li class="menu-item"><a href="#">Shoes</a></li>
+                                <li class="menu-item"><a href="#">Others</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" data-toggle="sub-menu">Pages <i class="plus"></i></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">page 1</a></li>
+                                <li class="menu-item"><a href="#">page 2</a></li>
+                                <li class="menu-item"><a href="#">page 3</a></li>
+                                <li class="menu-item"><a href="#">page 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a githref="#">News</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Contact</a>
+                        </li>
+                        
+                    </ul>
+                    <!-- <div class="btn" id="login-btn">
+                        <a id="click-btn" href="#">Login</a>
+                    </div> -->
+                   
+                </nav>
+
+                 <!-- modal search form -->
+                <div class="search-form">
+                    <input type="text" id="search" value="" placeholder="search ...">
+                    <label for="search-box"><i class="fa-solid fa-magnifying-glass"></i></label>
+                </div>
+                <!-- navigation menu end -->
+                <!-- <div class="icon">
+                    <div class="fas fa-search" id="search-btn"></div>
+                    <div class="fa-solid fa-cart-shopping" id="cart-btn"></div>
+                    <div class="fas fa-bars"  id="menu-btn"></div> -->
             </div>
         </div>
-        
     </header>
-    <!-- header-ends -->
+    <!-- header end -->
 
     <!-- detail-3 -->
      <section class="details">
