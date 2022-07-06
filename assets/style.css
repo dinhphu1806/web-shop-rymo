@@ -215,6 +215,7 @@ body{
 .cart-shopping{ 
     position: relative;
     display: none;
+    line-height: 2  0px;
 }
 .cart-shopping a{
     font-size: 20px;
@@ -566,7 +567,7 @@ body{
         }
         .cart-shopping{ 
             position: absolute;
-            right: 15%;
+            right: 14%;
             display: block;
         }
 }
