@@ -15,8 +15,8 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-     <!-- header start -->
-     <header class="header">
+    <!-- header start -->
+    <header class="header">
         <div class="container">
             <div class="header-main">
 
@@ -27,6 +27,13 @@
                         </a>
                     </div>
 
+                <div class="cart-shopping">
+                    <a href="#" class="fa-solid fa-cart-shopping cart">
+                        <span>0</span>
+                    </a>
+                    
+                </div>
+                    
                 <div class="open-nav-menu">
                     <span></span>
                 </div>
@@ -38,20 +45,27 @@
                 <nav class="nav-menu">
 
                     <div class="close-nav-menu">
-                         <img src="./images/close.svg" alt="close">
+                        <img src="./images/close.svg" alt="close">
                     </div>
-
-                    <div class="seacrh"></div>
+                    <div class="menu-item search-mobile"><a href="#">
+                        <div class="search">
+                            <input type="text" id="search" value="" placeholder="search ...">
+                            <label for="search-icon-ne"><i class="fa-solid fa-magnifying-glass"></i></label>
+                        </div>
+                        </a>
+                    </div>
+                    
 
                     <ul class="menu">
-                        <li class="menu-item">
+                       
+                        <li class="menu-item act">
                             <a href="#">Home</a>  
                         </li>
                         <li class="menu-item">
                             <a href="#">About</a>
                         </li>
                         <li class="menu-item menu-item-has-children">
-                            <a href="#" data-toggle="sub-menu">Product <i class="plus"></i></a>
+                            <a href="#" data-toggle="sub-menu">Product <i class="fa-solid fa-angle-down down"></i></a>
                             <ul class="sub-menu">
                                 <li class="menu-item"><a href="#">Clothes</a></li>
                                 <li class="menu-item"><a href="#watch">Watch</a></li>
@@ -61,7 +75,7 @@
                             </ul>
                         </li>
                         <li class="menu-item menu-item-has-children">
-                            <a href="#" data-toggle="sub-menu">Pages <i class="plus"></i></a>
+                            <a href="#" data-toggle="sub-menu">Pages <i class="fa-solid fa-angle-down down"></i></a>
                             <ul class="sub-menu">
                                 <li class="menu-item"><a href="#">page 1</a></li>
                                 <li class="menu-item"><a href="#">page 2</a></li>
@@ -70,35 +84,29 @@
                             </ul>
                         </li>
                         <li class="menu-item">
-                            <a githref="#">News</a>
+                            <a href="#">News</a>
                         </li>
                         <li class="menu-item">
                             <a href="#">Contact</a>
                         </li>
                         
-                    </ul>
-                    <!-- <div class="btn" id="login-btn">
-                        <a id="click-btn" href="#">Login</a>
-                    </div> -->
-                   
+                        <a class="menu-item fa-solid fa-magnifying-glass" id="search-pc" href="#"></a>
+                
+                        <li class="menu-item btn" >
+                           <div id="login-btn">
+                                 <a href="#"><span>Login</span></a>
+                           </div>
+                        </li>
+                        
+                    </ul>     
                 </nav>
 
-                 <!-- modal search form -->
-                <div class="search-form">
-                    <input type="text" id="search" value="" placeholder="search ...">
-                    <label for="search-box"><i class="fa-solid fa-magnifying-glass"></i></label>
-                </div>
-                <!-- navigation menu end -->
-                <!-- <div class="icon">
-                    <div class="fas fa-search" id="search-btn"></div>
-                    <div class="fa-solid fa-cart-shopping" id="cart-btn"></div>
-                    <div class="fas fa-bars"  id="menu-btn"></div> -->
             </div>
         </div>
     </header>
     <!-- header end -->
 
-    <!-- detail-3 -->
+    <!-- detail-1 -->
      <section class="details">
         <div class="details-container">
             <div class="link-title">
@@ -110,11 +118,13 @@
 
                 <div class="details-images-thumb">
                     <div class="details-center">
-                        <img id="imgBox"  src="./images/watch/detail-1/product-5.png" alt="">
+                        <img id="imgBox" src="./images/watch/detail-1/product-4.png" alt="">
                     </div>
     
                     <div class="details-list">
-                       
+                        <img onclick="myFun(this)" src="./images/watch/detail-1/product-4.png" alt="">
+                        <img onclick="myFun(this)" src="./images/watch/detail-1/product-2.png"  alt="">
+                        <img onclick="myFun(this)" src="./images/watch/detail-1/product-2.png"  alt="">
                         <img onclick="myFun(this)" src="./images/watch/detail-1/product-4.png"  alt="">
                         <img onclick="myFun(this)" src="./images/watch/detail-1/product-5.png"  alt="">
                     </div>
@@ -122,7 +132,7 @@
                
 
                 <div class="details-info">
-                    <h1>BENYAR Men’s Watch Amazon Analog</h1>
+                    <h1>The Longines Master Collection</h1>
                     <div class="brand-segment">
                         <div style="display: flex" class="brand-name-outer">
                             <span>Brand: </span>
@@ -152,7 +162,7 @@
                         </div>
                     </div>  
                     <div class="filter-prices">
-                        <span>₫959.000</span>  <p>₫1.350.000</p>  
+                        <span>₫349.000</span>  <p>₫498.000</p>  
                     </div>
                     <div class="select-details">
                         <div class="size-content">
@@ -283,80 +293,109 @@
         <a class="btn-top" href="#"><i class="fas fa-caret-square-up"></i></a>
     </div>
 
-      <!-- modal - login -->
-      <div class="modal js-modal" >
+        <!-- modal-search -->
+        <div class="modal-search js-modal-search" >
+            <div class="modal-container-search js-modal-container-search">
+                <div class="modal-close-search js-modal-close-search">X</div>
+                <div class="modal-content-search">
+                <div class="modal-content-search-title">
+                        <div class="modal-content-search-item">
+                            <input class="search-content" type="text" value="" placeholder="Search product ...">
+                            <label for="search-icon-box"><i class="fa-solid fa-magnifying-glass"></i></label>
+                        </div>
+                    
+                    </div>
+                    <div class="form-container-search">
+                    <h3>Quick access to products</h3>
+                    <ul>
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">Clothes</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Promotional products</a></li>
+                        <li><a href="#">Other accessories</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- modal - login -->
+    <div class="modal js-modal" >
         <div class="modal-container js-modal-container">
-          <div class="modal-close js-modal-close">X</div>
-          <div class="modal-content">
-              <div class="modal-title-text">
-                  <div class="modal-title login">
-                     Login
-                  </div>
-                  <div class="modal-title signup">
-                     Signup
-                  </div>
-               </div>
-               <div class="form-container">
-                  <div class="slide-controls">
-                     <input type="radio" name="slide" id="login" checked>
-                     <input type="radio" name="slide" id="signup">
-                     <label for="login" class="slide login">Login</label>
-                     <label for="signup" class="slide signup">Signup</label>
-                     <div class="slider-tab"></div>
-                  </div>
-                  <div class="form-inner">
-                      <!-- form-login -->
-                     <form action="#" class="login">
+            <div class="modal-close js-modal-close">X</div>
+            <div class="modal-content">
+                <div class="modal-title-text">
+                    <div class="modal-title login">
+                    Login
+                    </div>
+                    <div class="modal-title signup">
+                    Signup
+                    </div>
+                </div>
+                <div class="form-container">
+                    <div class="slide-controls">
+                    <input type="radio" name="slide" id="login" checked>
+                    <input type="radio" name="slide" id="signup">
+                    <label for="login" class="slide login">Login</label>
+                    <label for="signup" class="slide signup">Signup</label>
+                    <div class="slider-tab"></div>
+                    </div>
+                    <div class="form-inner">
+                        <!-- form-login -->
+                    <form action="#" class="login">
                         <div class="field">
-                           <input type="text" placeholder="Email Address" required>
+                            <input type="text" placeholder="Email" required>
                         </div>
                         <div class="field">
-                           <input type="password" placeholder="Password" required>
+                            <input type="password" placeholder="Password" required>
                         </div>
                         <div class="pass-link">
-                           <a href="#">Forgot password?</a>
+                            <a href="#">Forgot password?</a>
                         </div>
                         <div class="remember-me">
-                          <input type="checkbox" id="check-box">
-                          <span>Remember me</span>
+                            <input type="checkbox" id="check-box">
+                            <span>Remember me</span>
                         </div>
                         <div class="field btn">
-                           <div class="btn-layer"></div>
-                           <input type="submit" value="Login">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Login">
                         </div>
                         <div class="signup-link">
-                           Not a member? <a href="">Signup now</a>
+                            Not a member? <a href="">Signup now</a>
                         </div>
-                     </form>
-                     <!-- form sign up -->
-                     <form action="#" class="signup">
+                    </form>
+                    <!-- form sign up -->
+                    <form action="#" class="signup">
                         <div class="field">
-                           <input type="text" placeholder="Email Address" required>
-                        </div>
-                        <div class="field">
-                           <input type="password" placeholder="Password" required>
+                            <input type="text" placeholder="Email Address" required>
                         </div>
                         <div class="field">
-                           <input type="password" placeholder="Confirm password" required>
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" placeholder="Confirm password" required>
                         </div>
                         <div class="field btn">
-                           <div class="btn-layer"></div>
-                           <input type="submit" value="Signup">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Signup">
                         </div>
-                     </form>    
-                  </div>
-               </div>
-  
-  
-          </div>
+                    </form>    
+                    </div>
+                </div>
+
+
+            </div>
         </div>
-      </div>
+    </div>
+
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
+    <script src="./src/js/bar.js"></script>
     <script src="./src/js/modalSearch.js"></script>
     <script src="./src/js/modalCart.js"></script>
     <script src="./src/js/filterWatch.js"></script>
+    <script src="./src/js/searchWatch.js"></script>
     <script src="./src/js/backToTop.js"></script>
     <script src="./src/js/slideShow.js"></script>
     <script src="./src/js/slideBrand.js"></script>
@@ -364,6 +403,7 @@
     <script src="./src/js/btnClick.js"></script>
     <script src="./src/js/modalLogin.js"></script>
     <script src="./src/js/openModalLogin.js"></script>
+    <script src="./src/js/bannerSLider.js"></script>
 
     <script src="./src/js-details/detailsWatch.js"></script>
 </body>

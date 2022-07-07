@@ -64,6 +64,7 @@ body{
 	color: #e91e63;
 	font-weight: 600;
     letter-spacing: 3px;
+    filter: brightness(120%);
 }
 
 .header .nav-menu{
@@ -271,6 +272,17 @@ body{
     overflow: hidden;
     
 } */
+.search-mobile .search{
+    display: none;
+    
+}
+#search-pc{
+    color: var(--black);
+}
+#search-pc:hover{
+    color: #e91e63;
+    transition: all 0.3s linear;
+}
 
 #login-btn a{
     display: block;
@@ -567,15 +579,23 @@ body{
 }
 
 @media(max-width: 910px){
+    .header-main{
+        padding: 10px 20px;
+        
+    }
    .header .nav-menu{
         padding: 0 15px;
     }  
     .header .logo{
-        padding: 0 13px;
+        padding: 0 10px;
     }
     .header .logo a{
         font-size: 25px;
-        letter-spacing: 2px;
+        letter-spacing: 1.5px;
+    }
+    .header .menu > .menu-item{
+        margin-left: 15px;
+       
     }
     /* .header-main{
         padding: 10px 22px;
@@ -586,11 +606,11 @@ body{
         color: #000000;
     }
     .header .menu > .menu-item{ 
-        margin-left: 20px;
+        margin-left: 18px;
     }
     
     #login-btn a{
-        padding: 5px 20px;
+        padding: 5px 16px;
     
     }
 }
@@ -676,7 +696,7 @@ body{
         }
         .cart-shopping{ 
             position: absolute;
-            right: 14%;
+            right: 13%;
             display: block;
         }
         #login-btn{
@@ -688,12 +708,37 @@ body{
             color: #fff;
             box-shadow: rgba(165, 149, 156, 0.2) 0px 8px 24px;
           }
-}
+          .search-mobile .search{
+            display: block;
+            padding: 15px;
+            position: relative;
+           
+        }
+        .search input{
+            width: 100%;
+            padding: 10px;
+            /* border-radius: 5px; */
+            border: none;
+            outline: none;
+            font-family: ;
+            /* position: relative; */
+        }
+        .search label{
+            position: absolute;
+            top: 33%;
+            right: 8%;
+            color: rgb(94, 85, 85);
+        }
+        #search-pc i{
+            display: none;
+            
+        }
+}       
     
-    @media (max-width: 548px) {
+    @media (max-width: 570px) {
         .cart-shopping{ 
             position: absolute;
-            right: 20%;
+            right: 18%;
         }
     }
     @media (max-width: 380px) {
@@ -703,7 +748,7 @@ body{
         }
         .cart-shopping{ 
             position: absolute;
-            right: 27%;
+            right: 25%;
         }
         
     }

@@ -48,10 +48,19 @@
                 <nav class="nav-menu">
 
                     <div class="close-nav-menu">
-                    <img src="./images/close.svg" alt="close">
+                        <img src="./images/close.svg" alt="close">
                     </div>
+                    <div class="menu-item search-mobile"><a href="#">
+                        <div class="search">
+                            <input type="text" id="search" value="" placeholder="search ...">
+                            <label for="search-icon-ne"><i class="fa-solid fa-magnifying-glass"></i></label>
+                        </div>
+                        </a>
+                    </div>
+                    
 
                     <ul class="menu">
+                       
                         <li class="menu-item act">
                             <a href="#">Home</a>  
                         </li>
@@ -83,6 +92,10 @@
                         <li class="menu-item">
                             <a href="#">Contact</a>
                         </li>
+                        
+                        <a class="menu-item fa-solid fa-magnifying-glass" id="search-pc" href="#"></a>
+    
+                       
                         <li class="menu-item btn" >
                            <div id="login-btn">
                                  <a href="#"><span>Login</span></a>
@@ -115,10 +128,7 @@
     
     
     <!-- modal search form -->
-         <!-- <div class="search-form">
-            <input type="text" id="search" value="" placeholder="search ...">
-            <label for="search-box"><i class="fa-solid fa-magnifying-glass"></i></label>
-        </div> -->
+       
 
        <!-- modal cart  -->
         <!-- <div class="cart-form">
@@ -272,7 +282,7 @@
             <div class="banner-content">
                 <h3 class="banner-title">New Arraivals</h3>
                 <h1 class="banner-h1"><span>Best Price</span> This Year</h1>
-                <p class="banner-text">Shoomatic offers your very comfortable time<br>
+                <p class="banner-text">Shoomatic offers your very comfortable time
                     on walking and exercises.</p>
                 <div class="shop-now">
                     <a href="#">SHOP NOW</a>
@@ -1088,6 +1098,34 @@
         <a class="btn-top" href="#"><i class="fas fa-caret-square-up"></i></a>
     </div>
      
+
+    
+    <!-- modal-seach -->
+    <div class="modal-search js-modal-search" >
+            <div class="modal-container-search js-modal-container-search">
+                <div class="modal-close-search js-modal-close-search">X</div>
+                <div class="modal-content-search">
+                   <div class="modal-content-search-title">
+                        <div class="modal-content-search-item">
+                            <input class="search-content" type="text" value="" placeholder="Search product ...">
+                            <label for="search-icon-box"><i class="fa-solid fa-magnifying-glass"></i></label>
+                        </div>
+                      
+                    </div>
+                    <div class="form-container-search">
+                       <h3>Quick access to products</h3>
+                       <ul>
+                         <li><a href="#">Watch</a></li>
+                         <li><a href="#">Clothes</a></li>
+                         <li><a href="#">Shoes</a></li>
+                         <li><a href="#">Promotional products</a></li>
+                         <li><a href="#">Other accessories</a></li>
+                       </ul>
+                     </div>
+                 </div>
+             </div>
+  </div>
+  
     <!-- modal - login -->
     <div class="modal js-modal" >
       <div class="modal-container js-modal-container">

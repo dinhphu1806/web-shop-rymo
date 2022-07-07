@@ -553,3 +553,107 @@ form .btn{
   .remember-me{
      margin: 10px;
   }
+
+
+  /* modal seach */
+.modal-search{
+    display: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.js-modal-search.open{
+    display: flex;
+}
+.modal-container-search{
+    position: fixed;
+    top: 0;
+    top: 10%; left: 25%;
+    /* transform: translate(-50%, -50%);  */
+    width: 50%;
+    /* height: 300px; */
+    background-color: var(--main-bg-color);
+    border-radius: 10px;
+    z-index: 100;
+    animation: fadeSearch .5s ease;
+    transition: all 0.5s linear;
+}
+@keyframes fadeSearch {
+    from{
+        transform: translateY(-150px);
+    }to{
+        transform: translateY(0);
+    }
+}
+
+.modal-content-search{
+    position: relative;
+}
+.modal-close-search{
+    position: absolute;
+    z-index: 999;
+    top: 0%;
+    right: 0%; 
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #86868b;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+.modal-close-search:hover{
+    color: var(--btn-color);
+    transition: all 0.3s linear;
+}
+.modal-content-search-item{
+    position: relative;
+}
+.modal-content-search-item input[type="text"]{
+    padding: 15px 40px;
+    width: 100%;
+    border: none; 
+    outline: none;
+    background-color:var(--black);
+    color:rgb(204, 204, 204);
+    font-size: 16px;
+    
+}
+.modal-content-search-item label{
+    position: absolute;
+    top: 26%;
+    left: 2%;
+    /* color: var(--grey); */
+    color: var(--btn-color);
+    cursor: pointer;
+}
+.form-container-search{
+    padding: 20px 40px;
+    /* border: 1px solid #ccc; */
+}
+.form-container-search h3{
+    font-size: 13px;
+    /* color: #949498; */
+}
+
+.form-container-search ul{
+    margin-left: 20px;
+}
+.form-container-search ul li{
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+   
+}
+.form-container-search ul li a{
+    color: #000;
+}
+.form-container-search ul li a:hover{
+    color: rgb(13, 81, 227);
+    transform: translateX(10px);
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+
+
+
+
+   
