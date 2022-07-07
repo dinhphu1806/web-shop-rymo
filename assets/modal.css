@@ -371,9 +371,11 @@
     top: 0; right: 0;
     padding: 7px 20px;
     font-weight: bold;
-    background-color: var(--grey);
+    /* background-color: var(--grey); */
+    background-color:#fa4299;
+    /* background-color: #0171d3; */
     transition: all 0.2s linear;
-    border: 1px solid var(--grey);
+    /* border: 1px solid var(--grey); */
     color: var(--btn-color);
 }
 .modal-close:hover{
@@ -385,6 +387,7 @@
 .modal-content{
     background-color: var(--main-bg-color);
     padding: 10px 20px;
+    /* width: 100%; */
 }
 .modal-title-text{
     display: flex;
