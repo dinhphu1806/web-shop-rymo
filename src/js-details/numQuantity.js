@@ -1,6 +1,6 @@
-const plus = document.querySelector(".plus"),
-minus = document.querySelector(".minus"),
-num = document.querySelector(".num");
+const plus = document.querySelector(".plus");
+const minus = document.querySelector(".minus");
+const num = document.querySelector(".num");
 let a = 1;
 plus.addEventListener("click", ()=>{
   a++;

@@ -259,6 +259,7 @@
 .link-title{
     display: flex;
     padding: 10px 0;
+    margin-top: 50px;
 }
 .link-title a{
     color: var(--black);
@@ -364,6 +365,10 @@
 } 
 .quantity-number{
     margin-left: 20px;
+}
+.num{
+    width: 100px;
+    height: 200px;
 }
 /* .quantity span.num{
     font-size: 26px;
