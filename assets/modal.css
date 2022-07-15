@@ -301,7 +301,7 @@
     
 }
 .details-info{
-    padding: 40px 100px;
+    padding: 10px 70px;
 }
 .details-info h1{
     font-size: 32px;
@@ -345,7 +345,7 @@
     display: flex;
     /* justify-content: center; */
     align-items: center;
-    margin-left: 20px;
+    margin-left: 16px;
 }
 /* .quantity-text{
     margin: 0 20px;
@@ -364,7 +364,7 @@
     color: var(--btn-color);
 } 
 .quantity-number{
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .num{
     width: 100px;

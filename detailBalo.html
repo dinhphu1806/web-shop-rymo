@@ -15,86 +15,96 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-   <!-- header start -->
-   <header class="header">
-    <div class="container">
-        <div class="header-main">
+     <!-- header start -->
+     <header class="header">
+        <div class="container">
+            <div class="header-main">
 
-                <div class="logo">
-                    <a href="index.html">
-                        Rymo.
-                        <!-- <img src="./images/logo-rymo/logo1.png" alt=""> -->
+                    <div class="logo">
+                        <a href="index.html">
+                            Rymo.
+                            <!-- <img src="./images/logo-rymo/logo1.png" alt=""> -->
+                        </a>
+                    </div>
+
+                <div class="cart-shopping">
+                    <a href="#" class="fa-solid fa-cart-shopping cart">
+                        <span>0</span>
                     </a>
-                </div>
-
-            <div class="open-nav-menu">
-                <span></span>
-            </div>
-
-            <div class="menu-overlay">
-            </div>
-
-            <!-- navigation menu start -->
-            <nav class="nav-menu">
-
-                <div class="close-nav-menu">
-                <img src="./images/close.svg" alt="close">
-                </div>
-
-                <ul class="menu">
-                    <li class="menu-item">
-                        <a href="#">Home</a>  
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">About</a>
-                    </li>
-                    <li class="menu-item menu-item-has-children">
-                        <a href="#" data-toggle="sub-menu">Product <i class="plus"></i></a>
-                        <ul class="sub-menu">
-                            <li class="menu-item"><a href="#">Clothes</a></li>
-                            <li class="menu-item"><a href="#watch">Watch</a></li>
-                            <li class="menu-item"><a href="#">Backpack</a></li>
-                            <li class="menu-item"><a href="#">Shoes</a></li>
-                            <li class="menu-item"><a href="#">Others</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item menu-item-has-children">
-                        <a href="#" data-toggle="sub-menu">Pages <i class="plus"></i></a>
-                        <ul class="sub-menu">
-                            <li class="menu-item"><a href="#">page 1</a></li>
-                            <li class="menu-item"><a href="#">page 2</a></li>
-                            <li class="menu-item"><a href="#">page 3</a></li>
-                            <li class="menu-item"><a href="#">page 4</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item">
-                        <a githref="#">News</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">Contact</a>
-                    </li>
                     
-                </ul>
-                <!-- <div class="btn" id="login-btn">
-                    <a id="click-btn" href="#">Login</a>
-                </div> -->
-               
-            </nav>
+                </div>
+                    
+                <div class="open-nav-menu">
+                    <span></span>
+                </div>
 
-             <!-- modal search form -->
-            <div class="search-form">
-                <input type="text" id="search" value="" placeholder="search ...">
-                <label for="search-box"><i class="fa-solid fa-magnifying-glass"></i></label>
+                <div class="menu-overlay">
+                </div>
+
+                <!-- navigation menu start -->
+                <nav class="nav-menu">
+
+                    <div class="close-nav-menu">
+                        <img src="./images/close.svg" alt="close">
+                    </div>
+                    <div class="menu-item search-mobile"><a href="#">
+                        <div class="search">
+                            <input type="text" id="search" value="" placeholder="search ...">
+                            <label for="search-icon-ne"><i class="fa-solid fa-magnifying-glass"></i></label>
+                        </div>
+                        </a>
+                    </div>
+                    
+
+                    <ul class="menu">
+                       
+                        <li class="menu-item act">
+                            <a href="#">Home</a>  
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" data-toggle="sub-menu">Product <i class="fa-solid fa-angle-down down"></i></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">Clothes</a></li>
+                                <li class="menu-item"><a href="#watch">Watch</a></li>
+                                <li class="menu-item"><a href="#">Backpack</a></li>
+                                <li class="menu-item"><a href="#">Shoes</a></li>
+                                <li class="menu-item"><a href="#">Others</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" data-toggle="sub-menu">Pages <i class="fa-solid fa-angle-down down"></i></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">page 1</a></li>
+                                <li class="menu-item"><a href="#">page 2</a></li>
+                                <li class="menu-item"><a href="#">page 3</a></li>
+                                <li class="menu-item"><a href="#">page 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">News</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Contact</a>
+                        </li>
+                        
+                        <a class="menu-item fa-solid fa-magnifying-glass" id="search-pc" href="#"></a>
+                
+                        <li class="menu-item btn" >
+                           <div id="login-btn">
+                                 <a href="#"><span>Login</span></a>
+                           </div>
+                        </li>
+                        
+                    </ul>     
+                </nav>
+
             </div>
-            <!-- navigation menu end -->
-            <!-- <div class="icon">
-                <div class="fas fa-search" id="search-btn"></div>
-                <div class="fa-solid fa-cart-shopping" id="cart-btn"></div>
-                <div class="fas fa-bars"  id="menu-btn"></div> -->
         </div>
-    </div>
-</header>
-<!-- header end -->
+    </header>
+    <!-- header end -->
 
     <!-- detail-1 -->
      <section class="details">
@@ -105,51 +115,24 @@
                 <p>Balo 2022</p>
             </div>
             <div class="details-content">
-                
-                <div class="details-iamges-thumb">
+
+                <div class="details-images-thumb">
                     <div class="details-center">
-                        <img id="imgBox" style="width: 500px" src="./images/balo/detail-1/poly chuck plus 1.0.jpg" alt="">
+                        <img id="imgBox" style="width: 450px;" src="./images/balo/detail-1/poly chuck plus 1.0.jpg" alt="">
                     </div>
+    
                     <div class="details-list">
                         <img onclick="myFun(this)" src="./images/balo/detail-1/poly chuck plus 1.0.jpg" alt="">
-                        <img onclick="myFun(this)" src="./images/balo/detail-1/balo-4-2-1024x655.jpg"  alt="">
                         <img onclick="myFun(this)" src="./images/balo/detail-1/balo-4-1-1024x655.jpg"  alt="">
-                        
+                        <img onclick="myFun(this)" src="./images/balo/detail-1/balo-4-2-1024x655.jpg"  alt="">
+                         <!--<img onclick="myFun(this)" src="./images/watch/detail-1/product-4.png"  alt="">
+                        <img onclick="myFun(this)" src="./images/watch/detail-1/product-5.png"  alt=""> -->
                     </div>
-             
                 </div>
+               
 
                 <div class="details-info">
-                    <!-- <h1></h1>
-                    <div class="star-reviews">
-                        <div class="sold-star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="sold-reviews">
-                            2,548 reviews
-                        </div>
-                    </div>  
-                    <div class="filter-prices">
-                        <span>₫349.000</span>  <p>₫498.000</p>  
-                    </div>
-                    <div class="size">
-                        <span>S</span>
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
-                    </div>
-                    <div class="quantity-content">
-                        <div class="quantity">
-                            <span>Số lượng: <input type="number" value="1" min="0"></span>
-                        </div>
-                        
-                        <a href="">Add to cart</a>
-                    </div> -->
-                    <h1>Happy Sailed Womens Summer Boho Floral</h1>
+                    <h1>The Longines Master Collection</h1>
                     <div class="brand-segment">
                         <div style="display: flex" class="brand-name-outer">
                             <span>Brand: </span>
@@ -175,14 +158,14 @@
                             <span>4.9</span>
                         </div>
                         <div class="sold-reviews">
-                            (1,290 reviews)
+                            (2,548 reviews)
                         </div>
                     </div>  
                     <div class="filter-prices">
-                        <span>₫349.000</span>  <p>₫498.000</p>    
+                        <span>₫349.000</span>  <p>₫498.000</p>  
                     </div>
                     <div class="select-details">
-                        <!-- <div class="size-content">
+                        <div class="size-content">
                             Select size:
                             <select name="" id="">
                                 <option value="S">S</option>
@@ -190,40 +173,135 @@
                                 <option value="L">L</option>
                                 <option value="XL">XL</option>
                             </select>
-                        </div> -->
+                        </div>
                         
                         <div class="quantity">
-                            <span>Số lượng: <input type="number" value="1" min="0"></span>
+                            <div class="quantity-text">
+                                Quantity:
+                            </div>
+                            <div class="quantity-number">
+                                <span class="minus">-</span>
+                                <span class="num">01</span>
+                                <span class="plus">+</span>  
+                            </div>
                         </div>
                     </div>
-                    <div class="add-to-cart">                        
+                    <div class="add-to-cart">
+                        
+                        
                         <a href="">Add to cart</a>
                     </div>
 
                     <div class="product-description">
                         <h1>Product Description</h1>
                         <div class="under"></div>
-                        <h3>Genuine LONGlNES Master Collection Benzel Men's Watch 18k L2.628.5.38.7 (L26285387), 38.5mm:</h3>
-                        <p>- Brand new fullbox seal, full box of card book</p>
-                        <p>- Model: L2.628.5.38.7</p>
-                        <p>- Face diameter: 38.5mm</p>
-                        <p>- Dimensions are 18mm wide</p>
-                        <p>- 12 diamond hour markers</p>
-                        <p>- Gold face, gold braces with pure 18k gold demi band</p>
-                        <p>- Movement: Automatic Longines Caliber L619/888, 28’800 vph, 42-hour power reserve</p>
-                        <p>- Glass: High quality monolithic sapphire anti-scratch anti-glare</p>
-                        <p>- Water resistant: 30m</p>
-                        <p></p>
+                        <p>✔️ Height: 27cm,Weight: 0.65kg, Thickness: 12cm</p>
+                        <p>✔️ Material: PU leather</p>
+                        <p>✔️ Material: High quality fabric waterproof, dustproof, wear-resistant</p>
+                        <p>✔️ Color has 3 colors: BLUE, GRAY, BLACK</p>
+                        <p>✔️ Structure: Large main compartment, front zipper pocket, computer compartment, 
+                            secondary compartment for IPAD, pens and 2 side pockets.</p>
+                        <p>✔️ Features: BALO waterproof, anti-scratch, anti-dust. Combination of convenient 
+                            USB charging port and many utility compartments</p>
+                        <p>✔️ Uses: Going to school, work, going out, sports, travel, work...</p>
                     </div>
                 </div>
 
             </div>
+
+            <div class="details-others">
+                <div class="details-others-title product-description">
+                    <h1>Related products</h1>
+                    <div class="under"></div>
+                </div>
+                <div class="product-list">
+          <!-- item-1 -->
+                <div class="product-item">
+                    <div class="product-children-item item-1">
+                        <a href="detailBalo.html">
+                            <img src="./images/balo/detail-4/balo-3-1024x655.jpg"alt="">
+                            <div class="product-info">
+                                <h2>Poly Chuck Plus 1.0</h2>
+                                <div class="product-prices">
+                                    <p>₫550.000</p>
+                                    <span> ₫498.000</span>
+                                </div> 
+                            </div>
+                        </a>
+                        <div class="add-to-cart">
+                                <a class="hover-btn" href="#">Add to cart</a>
+                        </div>
+                    </div>
+                 
+                </div>
+
+            <!-- item-2 -->
+                <div class="product-item">
+                    <div class="product-children-item">
+                        <a href="detaileClothes1.html">
+                            <img src="./images/balo/detail-1/poly chuck plus 1.0.jpg" alt="">
+                            <div class="product-info">
+                                <h2>Poly Chuck Plus 1.0</h2>
+                                <div class="product-prices">
+                                    <p>₫550.000</p>
+                                    <span> ₫498.000</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="add-to-cart ">
+                            <a class="hover-btn" href="#">Add to cart</a>
+                        </div>
+                    </div>
+                   
+                </div>
+
+              <!-- item-3 -->
+                <div class="product-item">
+                    <div class="product-children-item">
+                        <a href="detailShoe1.html">
+                            <img src="./images/balo/detail-4/balo-3-1024x655.jpg" alt="">
+                            <div class="product-info">
+                                <h2>Poly Chuck Plus 1.0</h2>
+                                <div class="product-prices">
+                                    <p>₫550.000</p>
+                                    <span> ₫498.000</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="add-to-cart ">
+                            <a class="hover-btn" href="#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item-4 -->
+                <div class="product-item">
+                    <div class="product-children-item">
+                        <a href="">
+                            <img src="./images/balo/detail-1/poly chuck plus 1.0.jpg" alt="">
+                            <div class="product-info">
+                                <h2>Poly Chuck Plus 1.0</h2>
+                                <div class="product-prices">
+                                    <p>₫550.000</p>
+                                    <span> ₫498.000</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="add-to-cart ">
+                            <a class="hover-btn" href="#">Add to cart</a>
+                        </div>
+                    </div>
+                   
+                </div>
+
+             </div>
         </div>
+
+    
         
      </section>
 
-     
-
+    
 
 
 
@@ -308,6 +386,101 @@
         <a class="btn-top" href="#"><i class="fas fa-caret-square-up"></i></a>
     </div>
 
+        <!-- modal-search -->
+        <div class="modal-search js-modal-search" >
+            <div class="modal-container-search js-modal-container-search">
+                <div class="modal-close-search js-modal-close-search">X</div>
+                <div class="modal-content-search">
+                <div class="modal-content-search-title">
+                        <div class="modal-content-search-item">
+                            <input class="search-content" type="text" value="" placeholder="Search product ...">
+                            <label for="search-icon-box"><i class="fa-solid fa-magnifying-glass"></i></label>
+                        </div>
+                    
+                    </div>
+                    <div class="form-container-search">
+                    <h3>Quick access to products</h3>
+                    <ul>
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">Clothes</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Promotional products</a></li>
+                        <li><a href="#">Other accessories</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- modal - login -->
+    <div class="modal js-modal" >
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">X</div>
+            <div class="modal-content">
+                <div class="modal-title-text">
+                    <div class="modal-title login">
+                    Login
+                    </div>
+                    <div class="modal-title signup">
+                    Signup
+                    </div>
+                </div>
+                <div class="form-container">
+                    <div class="slide-controls">
+                    <input type="radio" name="slide" id="login" checked>
+                    <input type="radio" name="slide" id="signup">
+                    <label for="login" class="slide login">Login</label>
+                    <label for="signup" class="slide signup">Signup</label>
+                    <div class="slider-tab"></div>
+                    </div>
+                    <div class="form-inner">
+                        <!-- form-login -->
+                    <form action="#" class="login">
+                        <div class="field">
+                            <input type="text" placeholder="Email" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="pass-link">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <div class="remember-me">
+                            <input type="checkbox" id="check-box">
+                            <span>Remember me</span>
+                        </div>
+                        <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Login">
+                        </div>
+                        <div class="signup-link">
+                            Not a member? <a href="">Signup now</a>
+                        </div>
+                    </form>
+                    <!-- form sign up -->
+                    <form action="#" class="signup">
+                        <div class="field">
+                            <input type="text" placeholder="Email Address" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" placeholder="Confirm password" required>
+                        </div>
+                        <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Signup">
+                        </div>
+                    </form>    
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
@@ -315,11 +488,16 @@
     <script src="./src/js/modalSearch.js"></script>
     <script src="./src/js/modalCart.js"></script>
     <script src="./src/js/filterWatch.js"></script>
+    <script src="./src/js/searchWatch.js"></script>
     <script src="./src/js/backToTop.js"></script>
     <script src="./src/js/slideShow.js"></script>
     <script src="./src/js/slideBrand.js"></script>
     <script src="./src/js/pageScroll.js"></script>
     <script src="./src/js/btnClick.js"></script>
+    <script src="./src/js/modalLogin.js"></script>
+    <script src="./src/js/openModalLogin.js"></script>
+    <script src="./src/js/bannerSLider.js"></script>
+    <script src="./src/js-details/numQuantity.js"></script>
 
     <script src="./src/js-details/detailsWatch.js"></script>
 </body>
