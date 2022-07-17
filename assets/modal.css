@@ -238,8 +238,22 @@
     .quantity span{
         font-size: 16px;
     }
-    
-    
+    .details-center img{
+        width: 370px;
+    }
+    .btn-top{
+        position: fixed;
+        bottom: 100px;
+    }
+    .message-box{
+        position: fixed;
+        right: 12% !important;
+        bottom: 7% !important;
+        width: 2rem;
+        display: flex;
+        flex-direction: column;
+        
+    }
     
    
 
@@ -724,6 +738,120 @@ form .btn{
 
 
 
+.message-box{
+    position: fixed;
+    right: 8%;
+    bottom: 10%;
+    width: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10000;
+    
+}
+
+/* @keyframes myZoom1{
+    from{
+        transform: scale(0);
+        border: none;
+    }
+    to{
+        transform: scale(2);
+       
+    }
+} */
+.fa-facebook-messenger{
+    font-size: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: blue;
+    opacity: 1;
+    text-align: center;   
+    border-radius: 50%;
+    border: 1px solid blue;
+    transition: all 0.2s linear;
+    color: #fff;
+    cursor: pointer;
+    animation: myZoom 3s infinite;
+    transition: all .5 ease-in;
+
+}
+
+@keyframes myZoom{
+    from{
+        transform: scale(1) rotate(0);
+        border: none;
+    }
+    to{
+        transform: scale(1.2) rotate(30deg);
+        /* background-color:var(--main-color); */
+    }
+}
+/* .message-box .btn-message:hover{
+    background-color: red;
+    color: #fff;
+    opacity: .8;
+    font-weight: bold;
+    transform: scale(1.2);
+    transform-origin: right;
+} */
 
 
-   
+.phone-box{
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10000;
+    border: 2px solid red;
+    border-radius: 50%;
+    
+}
+
+/* @keyframes myZoom1{
+    from{
+        transform: scale(0);
+        border: none;
+    }
+    to{
+        transform: scale(2);
+       
+    }
+} */
+#js-btn-phone{
+    
+    width: 3rem;
+    height: 3rem;
+    opacity: 1;
+    text-align: center;   
+    
+    /* border: 1px solid blue; */
+    transition: all 0.2s linear;
+    color: #fff;
+    cursor: pointer;
+    
+    transition: all .5 ease-in;
+    color: red; 
+}   
+
+@keyframes myZoom1{
+    from{
+        transform: scale(1) rotate(0);
+        border: none;
+    }
+    to{
+        transform: scale(1.2) rotate(30deg);
+        /* background-color:var(--main-color); */
+    }
+}
+/* .phone-box .fa-phone:hover{
+    background-color: red;
+    color: #fff;
+    opacity: .8;
+    font-weight: bold;
+    transform: scale(1.2);
+    transform-origin: right;
+} */
