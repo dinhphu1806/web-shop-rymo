@@ -16,35 +16,26 @@
   
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
      <!-- header start -->
      <header class="header">
         <div class="container">
             <div class="header-main">
-
-                <div class="cart-shopping">
-                    <a href="cart.html" class="fa-solid fa-cart-shopping cart">
-                        <span>0</span>
-                    </a>
-                </div>
-
                 <div class="logo">
                     <a href="index.html">
                         Rymo.
                         <!-- <img src="./images/logo-rymo/logo1.png" alt=""> -->
                     </a>
-                   
                 </div>
-               
-                   <!-- icon bar -->
+     
+                <!-- icon bar -->
                 <div class="open-nav-menu">
                     <span></span>
                 </div>
-               
-              
-                   
-               
+
                 <!-- click ra ngoai -->
                 <div class="menu-overlay">
                 </div>
@@ -55,6 +46,7 @@
                     <div class="close-nav-menu">
                         <img src="./images/close.svg" alt="close">
                     </div>
+
                     <div class="menu-item search-mobile"><a href="#">
                         <div class="search">
                             <input type="text" id="search" value="" placeholder="search ...">
@@ -112,8 +104,13 @@
                     </div> -->
                    
                 </nav>
+                
+                <div class="cart-shopping">
+                    <a href="cart.html" class="fa-solid fa-cart-shopping cart">
+                        <span>0</span>
+                    </a>
+                </div>
               
-               
                  <!-- modal search form -->
                 <!-- <div class="search-form">
                     <input type="text" id="search" value="" placeholder="search ...">
@@ -128,13 +125,135 @@
         </div>
     </header>
     <!-- header end -->
+    <section class="container-form forms">
+        <div class="form login">
+            <div class="form-content">
+                <header>Login</header>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input">
+                        <i class='bx bx-envelope'></i>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Password" class="password">
+                        <i class='bx bx-lock-alt'></i>
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="form-link">
+                        <a href="#" class="forgot-pass">Forgot password?</a>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" class="checkbox">
+                        <label for="">Remember me</label>
+                    </div>
+
+                    <div class="field button-field">
+                        <button>Login</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                </div>
+
+                
+                <div class="line"></div>
+
+                <div class="social-links">
+                    <div class="social-list">
+                            <a class='bx bxl-facebook facebook-icon'></a>
+                            <a class='bx bxl-google'></a>
+                            <a class='bx bxl-twitter'></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="media-options">
+                <a href="#" class="field facebook">
+                    <i class='bx bxl-facebook facebook-icon'></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <i class='bx bxl-google'></i>
+                    <span>Login with Google</span>
+                </a>
+            </div> -->
+
+        </div>
+
+        <!-- Signup Form -->
+
+        <div class="form signup">
+            <div class="form-content">
+                <header>Signup</header>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input">
+                        <i class='bx bx-envelope'></i>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Create password" class="password">
+                        <i class='bx bx-lock-alt'></i>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Confirm password" class="password">
+                        <i class='bx bx-lock-alt'></i>
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="field button-field">
+                        <button>Signup</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="social-links">
+                    <div class="social-list">
+                            <a class='bx bxl-facebook facebook-icon'></a>
+                            <a class='bx bxl-google'></a>
+                            <a class='bx bxl-twitter'></a>
+                    </div>
+                </div>
+            </div>
+
+           
+
+            <!-- <div class="media-options">
+                <a href="#" class="field facebook">
+                    <i class='bx bxl-facebook facebook-icon'></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <img src="images/google.png" alt="" class="google-img">
+                    <span>Login with Google</span>
+                </a>
+            </div> -->
+
+        </div>
+    </section>    
 
 
-    <section class="login">
+    <!-- <section class="login">
         <div class="container">
             <div class="wrapper">
                 <header>Login Form</header>
-                <form action="#">
+                <form class="form" action="#">
                     <div class="field email">
                         <div class="input-area">
                         <input type="text" placeholder="Email Address">
@@ -158,7 +277,7 @@
               </div>
         </div>
         
-    </section>
+    </section> -->
 
 
 
@@ -183,6 +302,8 @@
          <script src="./src/js/openModalLogin.js"></script>
          <script src="./src/js/bannerSLider.js"></script>
          <script src="./src/js/gsap.js"></script>
+         <script src="./src/js/validationForm.js"></script>
+         <script src="./src/js/valid2Form.js"></script>
 
 </body>
 </html>

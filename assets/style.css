@@ -40,11 +40,11 @@ body{
 }
 /*header*/
 .header{
-	position: absolute;
-	width: 100%;
+	/* position: absolute;
+	width: 100%; */
 	/* left:0;
 	top:0; */
-	z-index: 100;
+	z-index: 999;
 	/* padding: 15px; */
 }
 .header .container{
@@ -148,6 +148,7 @@ body{
 	transition: all 0.3s ease;
 	opacity:0;
 	visibility: hidden;
+    z-index: 999;
 }
 .header .menu > .menu-item > .sub-menu > .menu-item{
     display: block;
@@ -736,7 +737,7 @@ body{
             /* border-radius: 5px; */
             border: none;
             outline: none;
-            font-family: ;
+           
             /* position: relative; */
         }
         .search label{
@@ -874,7 +875,7 @@ body{
 
 .filter-search-product{
     display: flex;
-    align-item: center;
+    align-items: center;
     justify-content: space-between;
     padding: 20px;
     
@@ -1489,3 +1490,14 @@ body{
 
 
    */
+
+/* css cart */
+.cart-container{
+    margin: 30px 30px 10px 30px;
+}
+.cart-container a{
+    color: blue;
+}
+.cart-container a:hover{
+    text-decoration: underline;
+}
