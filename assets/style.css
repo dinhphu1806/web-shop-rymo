@@ -42,18 +42,25 @@ body{
 .header{
 	position: absolute;
 	width: 100%;
-	left:0;
-	top:0;
-	z-index: 99;
+	/* left:0;
+	top:0; */
+	z-index: 100;
 	/* padding: 15px; */
 }
+.header .container{
+    background-color: #fff;
+    
+    
+}
 .header-main{
-	background-color: #ffffff;
+    
+	/* background-color: #ffffff; */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 10px 70px;
+	padding: 10px 40px;
 	/* border-radius: 4px; */
+   
 }
 .header .logo{
 	padding: 0 15px;
@@ -69,6 +76,7 @@ body{
 
 .header .nav-menu{
 	padding: 0 15px;
+    position: relative;
     /* display: flex;
     justify-content: space-between;
     align-items: center; */
@@ -161,10 +169,11 @@ body{
 .header .open-nav-menu{
     height: 34px;
     width: 40px;
-    margin-right: 15px;
+    /* margin-right: 15px; */
     display: none;
     align-items: center;
-    justify-content: center;
+    /* justify-content: flex-start; */
+    /* justify-content: center; */
     cursor: pointer;
 }
 .header .open-nav-menu span{
@@ -185,20 +194,20 @@ body{
     box-sizing: border-box;
 }
 .header .open-nav-menu span:before{
-    top:-7px;
+    top: -7px;
 }
 .header .open-nav-menu span:after{
-    top:7px;
+    top: 7px;
 }
 .header .close-nav-menu{
     height: 40px;
     width: 40px;
-    background-color: #ffffff;
+    background-color: #fff;
     margin:0 0 15px 15px;
     cursor: pointer;
-    display: none;
     align-items: center;
     justify-content: center;
+    display: none;
 }
 .header .close-nav-menu img{
     width: 16px;
@@ -218,8 +227,8 @@ body{
 
 .cart-shopping{ 
     position: relative;
-    display: none;
-    line-height: 2  0px;
+    /* display: none; */
+    line-height: 20px;
 }
 .cart-shopping a{
     font-size: 20px;
@@ -457,23 +466,6 @@ body{
     }
 }
 
-
-/* .login a{
-    background-color: rgba(255, 255, 255, 0.669);
-    border-radius: 5px;
-    padding: 10px 30px;
-    background-color: var(--main-bg-color);
-    color: var(--black);
-    border: 2px solid var(--black);
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-}
-.login a:hover{
-    background-color: var(--black);
-    color: var(--btn-color);
-} */
-
 .icon{
     display: flex;
     justify-content: center;
@@ -572,13 +564,13 @@ body{
         margin-left: 20px;
        
     }
-    .header .logo{
+    /* .header .logo{
         padding: 0 10px;
-    }
-    #login-btn a{
+    } */
+    /* #login-btn a{
         padding: 7px 25px;
     
-    }
+    } */
 }
 
 @media(max-width: 910px){
@@ -589,9 +581,9 @@ body{
    .header .nav-menu{
         padding: 0 15px;
     }  
-    .header .logo{
+    /* .header .logo{
         padding: 0 10px;
-    }
+    } */
     .header .logo a{
         font-size: 25px;
         letter-spacing: 1.5px;
@@ -612,31 +604,37 @@ body{
         margin-left: 18px;
     }
     
-    #login-btn a{
+    /* #login-btn a{
         padding: 5px 16px;
     
-    }
+    } */
 }
     
 @media(max-width: 768px){
+        
+        
         .header-main{
-            padding: 10px 20px;
-            /* border-radius: 4px; */
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            padding: 10px 10px !important;
         }
         .header .logo{
-            padding: 0 10px;
+            padding: 0 200px;
+           
         }
         .header .logo a{
             font-size: 25px;
          
         }
         .header .menu-overlay.active{
-        visibility: visible;
-        opacity: 1;
-    }
+            visibility: visible;
+            opacity: 1;
+        }
         .header .nav-menu{
             position: fixed;
-            right: -280px;
+            /* right: -280px; */
+            left: -100%;
             visibility: hidden;
             width: 280px;
             height: 100%;
@@ -649,7 +647,8 @@ body{
         }
         .header .nav-menu.open{
             visibility: visible;
-            right: 0px;
+            /* right: 0px; */
+            left: 0;
         }
         .header .menu > .menu-item{
             display: block;
@@ -665,7 +664,9 @@ body{
             padding: 12px 15px;
             border-bottom: 1px solid #333333;
         }
-        
+        .act a{
+            color: #fff !important; 
+        }
         .header .menu > .menu-item:first-child > a{
             border-top: 1px solid #333333;	
         }
@@ -699,7 +700,7 @@ body{
         }
         .cart-shopping{ 
             position: absolute;
-            right: 13%;
+            /* right: 13%; */
             display: block;
         }
         #login-btn{
@@ -728,16 +729,52 @@ body{
         }
         .search label{
             position: absolute;
-            top: 33%;
-            right: 8%;
-            color: rgb(94, 85, 85);
+            top: 23%;
+            right:  5%; 
+            transform: translate(50% -50%);
+            /* color: rgb(94, 85, 85); */
+            color: #fff;
+            background-color: #e91e63;
+            /* background-color: #000; */
+            padding: 6.5px 10px;
         }
-        #search-pc i{
+        #search-pc{
             display: none;
-            
         }
-}       
-    
+}    
+@media(max-width: 590px){
+    .header .logo{
+        padding: 0 170px;
+       
+    }
+}
+@media(max-width: 520px){
+    .header .logo{
+        padding: 0 130px;
+       
+    }
+}
+
+@media(max-width: 420px){
+    .header .logo{
+        padding: 0 100px;
+       
+    }
+}
+
+@media(max-width: 360px){
+    .header .logo{
+        padding: 0 80px;
+       
+    }
+}
+@media(max-width: 280px){
+    .header .logo{
+        padding: 0 60px;
+       
+    }
+}
+/*     
     @media (max-width: 570px) {
         .cart-shopping{ 
             position: absolute;
@@ -757,7 +794,6 @@ body{
     @media (max-width: 320px) {
         .header-main{
             padding: 10px 10px;
-            /* border-radius: 4px; */
         }
         .cart-shopping{ 
             position: absolute;
@@ -774,12 +810,11 @@ body{
         .cart-shopping{ 
             right: 28%;
         }
-    }
+    } */
 
     
 
 @media (max-width: 768px) {
-    
     .banner-content{
         position: absolute;
         top: 20%;
@@ -831,6 +866,9 @@ body{
         margin-bottom: 10px;
         margin-top: 20px;
        
+   }
+   .swiper{
+    width: 100% !important;
    }
    .swiper-button-next{
         display: none !important;
@@ -1393,7 +1431,7 @@ body{
 }
 .input input[type="submit"]{
     outline: none;
-    border: none;
+    border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- lib animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+    <!-- lib swipper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+      <!-- header start -->
+      <header class="header">
+        <div class="container">
+            <div class="header-main">
+
+                <div class="logo">
+                    <a href="index.html">
+                        Rymo.
+                            <!-- <img src="./images/logo-rymo/logo1.png" alt=""> -->
+                     </a>
+                </div>
+
+                <div class="cart-shopping">
+                    <a href="#" class="fa-solid fa-cart-shopping cart">
+                        <span>0</span>
+                    </a>
+                    
+                </div>
+                    
+                <div class="open-nav-menu">
+                    <span></span>
+                </div>
+
+                <div class="menu-overlay">
+                </div>
+
+                <!-- navigation menu start -->
+                <nav class="nav-menu">
+
+                    <div class="close-nav-menu">
+                        <img src="./images/close.svg" alt="close">
+                    </div>
+                    <div class="menu-item search-mobile"><a href="#">
+                        <div class="search">
+                            <input type="text" id="search" value="" placeholder="search ...">
+                            <label for="search-icon-ne"><i class="fa-solid fa-magnifying-glass"></i></label>
+                        </div>
+                        </a>
+                    </div>
+                    
+
+                    <ul class="menu">
+                        <li class="menu-item act">
+                            <a href="#">Home</a>  
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" data-toggle="sub-menu">Product <i class="fa-solid fa-angle-down down"></i></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item gsap-item"><a href="#">Clothes</a></li>
+                                <li class="menu-item gsap-item"><a href="#watch">Watch</a></li>
+                                <li class="menu-item gsap-item"><a href="#">Backpack</a></li>
+                                <li class="menu-item gsap-item"><a href="#">Shoes</a></li>
+                                <li class="menu-item gsap-item"><a href="#">Others</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" data-toggle="sub-menu">Pages <i class="fa-solid fa-angle-down down"></i></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item gsap-item"><a href="#">page 1</a></li>
+                                <li class="menu-item gsap-item"><a href="#">page 2</a></li>
+                                <li class="menu-item gsap-item"><a href="#">page 3</a></li>
+                                <li class="menu-item gsap-item"><a href="#">page 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">News</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Contact</a>
+                        </li>
+                        
+                        <a class="menu-item fa-solid fa-magnifying-glass" id="search-pc" href="#"></a>
+    
+                       
+                        <li class="menu-item btn" >
+                           <div id="login-btn">
+                                 <a href="#"><span>Login</span></a>
+                           </div>
+                        </li>
+                        
+                    </ul>
+                    <!-- <div class="btn" id="login-btn">
+                        <a id="click-btn" href="#">Login</a>
+                    </div> -->
+                   
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+  
+       
+       <!-- modal-seach -->
+    <div class="modal-search js-modal-search" >
+            <div class="modal-container-search js-modal-container-search">
+                <div class="modal-close-search js-modal-close-search">X</div>
+                <div class="modal-content-search">
+                   <div class="modal-content-search-title">
+                        <div class="modal-content-search-item">
+                            <input class="search-content" type="text" value="" placeholder="Search product ...">
+                            <label for="search-icon-box"><i class="fa-solid fa-magnifying-glass"></i></label>
+                        </div>
+                      
+                    </div>
+                    <div class="form-container-search">
+                       <h3>Quick access to products</h3>
+                       <ul>
+                         <li><a href="#">Watch</a></li>
+                         <li><a href="#">Clothes</a></li>
+                         <li><a href="#">Shoes</a></li>
+                         <li><a href="#">Promotional products</a></li>
+                         <li><a href="#">Other accessories</a></li>
+                       </ul>
+                     </div>
+                 </div>
+            </div>
+   </div>
+
+
+       <!-- src gsap -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+       <!-- src lib swiper -->
+       
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  
+      <script src="./src/js/bar.js"></script>
+      <script src="./src/js/modalSearch.js"></script>
+      <script src="./src/js/modalCart.js"></script>
+      <script src="./src/js/filterWatch.js"></script>
+      <script src="./src/js/searchWatch.js"></script>
+      <script src="./src/js/backToTop.js"></script>
+      <script src="./src/js/slideShow.js"></script>
+      <script src="./src/js/slideBrand.js"></script>
+      <script src="./src/js/pageScroll.js"></script>
+      <script src="./src/js/btnClick.js"></script>
+      <script src="./src/js/modalLogin.js"></script>
+      <script src="./src/js/openModalLogin.js"></script>
+      <script src="./src/js/bannerSLider.js"></script>
+      <script src="./src/js/gsap.js"></script>
+</body>
+</html>
