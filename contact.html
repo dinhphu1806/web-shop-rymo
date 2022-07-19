@@ -18,8 +18,8 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-     <!-- header start -->
-     <header class="header">
+       <!-- header start -->
+    <header class="header">
         <div class="container">
             <div class="header-main">
 
@@ -126,31 +126,74 @@
         </div>
     </header>
     <!-- header end -->
-    
-    <!-- section cart starts -->
-     <section class="cart-product">
+
+      <!-- section cart starts -->
+    <section class="cart-product">
         <div class="details-container">
             <div class="link-title">
                 <a href="index.html">Home</a>
                 <span>/</span>
-                <p>Cart</p>
+                <p>Contact</p>
             </div>
-            <div class="cart-container">
-                You have not logged into your account ?
-                <div class="click-login">
-                    <span>Click here</span>
-                    <a href="login.html">Login</a>
-                </div>
-           </div>
         </div>
      </section>   
-    <!-- section cart ends -->
-
 
      <!-- secsion cart ends -->
 
-     <footer class="footer-top">
+    <!-- section contact starts -->
+    <section class="contact">
+        <div class="contact-container">
+            <div class="contact-left">
+                <h1>Contact us</h1>
+                <div class="contact-location flex">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>521 lane, Co Nhue Street <br>North District of Tu Liem, Hanoi </p>
+                </div>
+                <div class="contact-phone flex">
+                    <i class="fas fa-phone"></i>
+                    <p>(+84) 356.897.495</p>
+                </div>
+                <div class="contact-mail flex">
+                    <i class="fas fa-envelope"></i>
+                    <p>dinhphu.le1806it@gmail.com</p>
+                </div>
+            </div>
+            <div class="contact-right">
+                <h1>Do you need support? Please send us information</h1>
+                <h3>We are happy to answer any of your questions or concerns.</h3>
+                <form action="" id="myform" onsubmit = "return validate();">
+                    <div id="error_message"></div>
+                    <div class="form-list">
+                        <div class="input_field">
+                            <input type="text" placeholder="Enter your first and last name ..." id="name">
+                            <span>First name and Last name *</span>
+                        </div>
+                        <div class="input_field">
+                            <input type="text" placeholder="Enter your email address..." id="email">
+                            <span>Email *</span>
+                        </div>
+                        <div class="input_field">
+                            <input type="text" placeholder="Enter your phone number..." id="phone">
+                            <span>Phone *</span>
+                        </div>
+                        <div class="input_field_content">
+                            <textarea placeholder="Contact content" id="message"></textarea>
+                            <span>Content</span>
+                        </div>
+                        <div class="btn">
+                            <input type="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- section contact ends -->
+
+    <!-- secsion footer starts -->
+    <footer class="footer-top">
         <div class="footer-container">
+           
                 <div class="footer-left-contact">
                     <div class="logo-footer">
                         <img src="./images/logo-footer/logo2.png" alt="">
@@ -225,51 +268,49 @@
        
        <!-- modal-seach -->
     <div class="modal-search js-modal-search" >
-            <div class="modal-container-search js-modal-container-search">
-                <div class="modal-close-search js-modal-close-search">X</div>
-                <div class="modal-content-search">
-                   <div class="modal-content-search-title">
-                        <div class="modal-content-search-item">
-                            <input class="search-content" type="text" value="" placeholder="Search product ...">
-                            <label for="search-icon-box"><i class="fa-solid fa-magnifying-glass"></i></label>
-                        </div>
-                      
-                    </div>
-                    <div class="form-container-search">
-                       <h3>Quick access to products</h3>
-                       <ul>
-                         <li><a href="#">Watch</a></li>
-                         <li><a href="#">Clothes</a></li>
-                         <li><a href="#">Shoes</a></li>
-                         <li><a href="#">Promotional products</a></li>
-                         <li><a href="#">Other accessories</a></li>
-                       </ul>
-                     </div>
-                 </div>
+        <div class="modal-container-search js-modal-container-search">
+            <div class="modal-close-search js-modal-close-search">X</div>
+            <div class="modal-content-search">
+                <div class="modal-content-search-title">
+                    <div class="modal-content-search-item">
+                        <input class="search-content" type="text" value="" placeholder="Search product ...">
+                        <label for="search-icon-box"><i class="fa-solid fa-magnifying-glass"></i></label>
+                    </div>     
+                </div>
+                <div class="form-container-search">
+                <h3>Quick access to products</h3>
+                    <ul>
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">Clothes</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Promotional products</a></li>
+                        <li><a href="#">Other accessories</a></li>
+                    </ul>
+                </div>
             </div>
-   </div>
+        </div>
+    </div>
 
+        <!-- src gsap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 
-       <!-- src gsap -->
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-
-       <!-- src lib swiper -->
-       
-      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  
-      <script src="./src/js/bar.js"></script>
-      <script src="./src/js/modalSearch.js"></script>
-      <script src="./src/js/modalCart.js"></script>
-      <script src="./src/js/filterWatch.js"></script>
-      <script src="./src/js/searchWatch.js"></script>
-      <script src="./src/js/backToTop.js"></script>
-      <script src="./src/js/slideShow.js"></script>
-      <script src="./src/js/slideBrand.js"></script>
-      <script src="./src/js/pageScroll.js"></script>
-      <script src="./src/js/btnClick.js"></script>
-      <script src="./src/js/modalLogin.js"></script>
-      <script src="./src/js/openModalLogin.js"></script>
-      <script src="./src/js/bannerSLider.js"></script>
-      <script src="./src/js/gsap.js"></script>
+        <!-- src lib swiper -->
+        
+       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   
+       <script src="./src/js/bar.js"></script>
+       <script src="./src/js/modalSearch.js"></script>
+       <script src="./src/js/modalCart.js"></script>
+       <script src="./src/js/filterWatch.js"></script>
+       <script src="./src/js/searchWatch.js"></script>
+       <script src="./src/js/backToTop.js"></script>
+       <script src="./src/js/slideShow.js"></script>
+       <script src="./src/js/slideBrand.js"></script>
+       <script src="./src/js/pageScroll.js"></script>
+       <script src="./src/js/btnClick.js"></script>
+       <script src="./src/js/modalLogin.js"></script>
+       <script src="./src/js/openModalLogin.js"></script>
+       <script src="./src/js/bannerSLider.js"></script>
+       <script src="./src/js/gsap.js"></script>
 </body>
 </html>
