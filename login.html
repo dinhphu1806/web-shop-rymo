@@ -20,8 +20,14 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-     <!-- header start -->
-     <header class="header">
+    <!-- header-top -->
+    <section class="header-top">
+        <div class="container">
+            
+        </div>
+    </section>
+    <!-- header start -->
+    <header class="header">
         <div class="container">
             <div class="header-main">
                 <div class="logo">
@@ -94,7 +100,7 @@
                        
                         <li class="menu-item btn" >
                            <div id="login-btn">
-                                 <a href="#"><span>Login</span></a>
+                                 <a href="login.html"><span>Login</span></a>
                            </div>
                         </li>
                         
@@ -110,17 +116,7 @@
                         <span>0</span>
                     </a>
                 </div>
-              
-                 <!-- modal search form -->
-                <!-- <div class="search-form">
-                    <input type="text" id="search" value="" placeholder="search ...">
-                    <label for="search-box"><i class="fa-solid fa-magnifying-glass"></i></label>
-                </div> -->
-                <!-- navigation menu end -->
-                <!-- <div class="icon">
-                    <div class="fas fa-search" id="search-btn"></div>
-                    <div class="fa-solid fa-cart-shopping" id="cart-btn"></div>
-                    <div class="fas fa-bars"  id="menu-btn"></div> -->
+
             </div>
         </div>
     </header>
@@ -129,14 +125,16 @@
         <div class="form login">
             <div class="form-content">
                 <header>Login</header>
-                <form action="#">
+                <form action="#" name="Form" onsubmit="return validateForm()">
                     <div class="field input-field">
-                        <input type="email" placeholder="Email" class="input">
+                        <input type="text" placeholder="Email" class="input" id="email" name="email">
+                        <div class="error" id="emailErr"></div>
                         <i class='bx bx-envelope'></i>
                     </div>
 
                     <div class="field input-field">
-                        <input type="password" placeholder="Password" class="password">
+                        <input type="password" placeholder="Password" class="password" id="password" name="password">
+                        <div class="error" id="passwordErr"></div>
                         <i class='bx bx-lock-alt'></i>
                         <i class='bx bx-hide eye-icon'></i>
                     </div>
@@ -151,7 +149,8 @@
                     </div>
 
                     <div class="field button-field">
-                        <button>Login</button>
+                        <!-- <button>Login</button> -->
+                        <input type="submit" value="Submit">
                     </div>
                 </form>
 
@@ -192,25 +191,28 @@
         <div class="form signup">
             <div class="form-content">
                 <header>Signup</header>
-                <form action="#">
+                <form action="#" >
                     <div class="field input-field">
-                        <input type="email" placeholder="Email" class="input">
+                        <input type="text" placeholder="Email" class="input" id="email" name="email">
+                        <div class="error" id="emailErr"></div>
                         <i class='bx bx-envelope'></i>
                     </div>
 
                     <div class="field input-field">
-                        <input type="password" placeholder="Create password" class="password">
+                        <input type="password" placeholder="Create password" class="password" id="password" name="password">
+                        <div class="error" id="passwordErr"></div>
                         <i class='bx bx-lock-alt'></i>
                     </div>
 
                     <div class="field input-field">
-                        <input type="password" placeholder="Confirm password" class="password">
+                        <input type="password" placeholder="Confirm password" class="password" id="password" name="password">
+                        <div class="error" id="passwordErr"></div>
                         <i class='bx bx-lock-alt'></i>
                         <i class='bx bx-hide eye-icon'></i>
                     </div>
 
                     <div class="field button-field">
-                        <button>Signup</button>
+                        <input type="submit" value="Signup">
                     </div>
                 </form>
 
